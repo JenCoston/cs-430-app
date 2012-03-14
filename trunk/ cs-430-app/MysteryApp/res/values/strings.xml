@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">CAN YOU SOLVE THE MYSTERY??</string>
+    <string name="app_name">MysteryApp</string>
+    <string name="Play">Start a New Game</string>
+    <string name="Save">Save!</string>
+    <string name="Leader">View the Leader Board</string>
+    <string name="Options">Options</string>
+    <string name="New">Start New Game!</string>
+    <string name="Resume">Resume a Saved Game</string>
+    <string name="Help">View Gameplay Help</string>
+    <string name="Quit">Quit Game</string>
+    <string name="Char">Use Existing Character</string>
+    <string name="New_Char">Create a New Character</string>
+    <string name="Return">Return to Main Menu</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Submit">Submit</string>
+    <string name="Name">Enter your username</string>
+    <string name="Email">Enter your email</string>
+    <string name="Empty">Empty</string>
+    <string name="LeaderBoard">This will display the leader board</string>
+    <string name="tmphelp">This will display help</string>
+    <string name="savecont">Save and Continue</string>
+    <string name="Savequit">Save and Quit</string>
+    <string name="Quitnosave">Quit without Saving</string>
+    <string name="tmpinv">This will display inventory</string>
+    <string name="returngame">Return to Current Game</string>
+    <string name="tmplog">This will display logbook</string>
+    <string name="log">View the Logbook</string>
+    <string name="inv">Check Inventory</string>
+    <string name="sandq">Save and/or Quit</string>
+    <string name="tmpmap">Display interactive map here</string>
+    <string name="tmpplay">Not sure how this will be</string>
+    <string name="map">View the Map</string>
+    <string name="menu">View In-Game Menu</string>
+
+</resources>
