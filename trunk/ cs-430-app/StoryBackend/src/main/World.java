@@ -8,15 +8,21 @@ import locations.Dislexia;
 import locations.Orient;
 import locations.Pacifica;
 import locations.Keyser;
+import locations.Peoria;
+import locations.Scimitar;
+import locations.Wallaby;
 
 import persons.AmbassadorAmber;
+import persons.ArchdukeAlex;
 import persons.ChancellorChuck;
 import persons.Person;
 import persons.DictatorDave;
 import persons.EmperorEddy;
 import persons.PresidentPaul;
 import persons.KingCarl;
+import persons.PrimeMinisterPatricia;
 import persons.QueenLizzy;
+import persons.SultanSam;
 
 public class World {
 	private static World w;
@@ -42,7 +48,10 @@ public class World {
 					KingCarl.getKingCarl(),
 					AmbassadorAmber.getAmbassadorAmber(),
 					QueenLizzy.getQueenLizzy(),
-					ChancellorChuck.getChancellorChuck()
+					ChancellorChuck.getChancellorChuck(),
+					PrimeMinisterPatricia.getPrimeMinisterPatricia(),
+					SultanSam.getSultanSam(),
+					ArchdukeAlex.getArchdukeAlex()
 		};
 		this.people = people;
 	}
@@ -55,7 +64,10 @@ public class World {
 						Keyser.getKeyser(),
 						Ambrosia.getAmbrosia(),
 						Edenborough.getEdenborough(),
-						Concordia.getConcordia()
+						Concordia.getConcordia(),
+						Peoria.getPeoria(),
+						Scimitar.getScimitar(),
+						Wallaby.getWallaby()
 		};
 		this.locations = locations;
 	}

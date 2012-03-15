@@ -1,11 +1,13 @@
 package persons;
 
+import locations.Pacifica;
+
 
 public class PresidentPaul extends NPC {
 	private static PresidentPaul t;
 	
 	private PresidentPaul() {
-		super("President Paul of Pacifica");
+		super("President Paul", Pacifica.getPacifica());
 	}
 	
 	public static PresidentPaul getPresidentPaul() {

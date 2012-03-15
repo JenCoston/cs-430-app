@@ -1,11 +1,13 @@
 package persons;
 
+import locations.Orient;
+
 
 public class EmperorEddy extends NPC {
 	private static EmperorEddy t;
 	
 	private EmperorEddy() {
-		super("Emperor Eddy of Orient");
+		super("Emperor Eddy", Orient.getOrient());
 	}
 	
 	public static EmperorEddy getEmperorEddy() {
