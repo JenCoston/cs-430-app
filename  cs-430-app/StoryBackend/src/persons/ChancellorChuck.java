@@ -1,10 +1,12 @@
 package persons;
 
+import locations.Concordia;
+
 public class ChancellorChuck extends NPC {
 	private static ChancellorChuck t;
 		
 	private ChancellorChuck() {
-		super("Chancellor Chuck of Concordia");
+		super("Chancellor Chuck", Concordia.getConcordia());
 	}
 		
 	public static ChancellorChuck getChancellorChuck() {

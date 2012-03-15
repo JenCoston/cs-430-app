@@ -1,27 +1,28 @@
 package locations;
 
-public class Concordia extends Location {
-	private static Concordia t;
+public class Peoria extends Location {
+	private static Peoria t;
 	
-	private Concordia() {
-		super("Concordia", "A county of flat plains");
+	private Peoria() {
+		super("Peoria", "A lively nation of forests and natural resources");
 	}
 	
-	public static Concordia getConcordia() {
+	public static Peoria getPeoria() {
 		if (t==null)
-			t = new Concordia();
+			t = new Peoria();
 		return t;
 	}
 
 	@Override
 	public void enter() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void leave() {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 }

@@ -1,11 +1,13 @@
 package persons;
 
+import locations.Keyser;
+
 
 public class KingCarl extends NPC {
 	private static KingCarl t;
 	
 	private KingCarl() {
-		super("King Carl of Keyser");
+		super("King Carl", Keyser.getKeyser());
 	}
 	
 	public static KingCarl getKingCarl() {

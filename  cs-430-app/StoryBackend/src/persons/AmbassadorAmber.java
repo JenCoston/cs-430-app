@@ -1,10 +1,12 @@
 package persons;
 
+import locations.Ambrosia;
+
 public class AmbassadorAmber extends NPC {
 	private static AmbassadorAmber t;
 		
 	private AmbassadorAmber() {
-		super("Ambassador Amber of Ambrosia");
+		super("Ambassador Amber", Ambrosia.getAmbrosia());
 	}
 		
 	public static AmbassadorAmber getAmbassadorAmber() {

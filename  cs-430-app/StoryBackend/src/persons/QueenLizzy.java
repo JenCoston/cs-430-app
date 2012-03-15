@@ -1,10 +1,12 @@
 package persons;
 
+import locations.Edenborough;
+
 public class QueenLizzy extends NPC {
 	private static QueenLizzy t;
 		
 	private QueenLizzy() {
-		super("Queen Lizzy of Edenborough");
+		super("Queen Lizzy", Edenborough.getEdenborough());
 	}
 		
 	public static QueenLizzy getQueenLizzy() {

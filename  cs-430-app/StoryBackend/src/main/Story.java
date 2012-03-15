@@ -8,11 +8,12 @@ import java.util.Random;
 
 import locations.Location;
 
+import persons.NPC;
 import persons.Person;
 
 public class Story {
-	private Person killer;
-	private Person victim;
+	private NPC killer;
+	private NPC victim;
 	private Item murderWeapon;
 	private Location murderLocation;
 	private static Story s;
@@ -40,14 +41,14 @@ public class Story {
 		v = gen.nextInt(persons);
 		while (k == v)
 			v = gen.nextInt(persons);
-		killer = w.getPerson(k);
-		victim = w.getPerson(v);
+		killer = (NPC)w.getPerson(k);
+		victim = (NPC)w.getPerson(v);
 		murderWeapon = MurderWeapon.getMurderWeapon(gen.nextInt(weaps));
 		murderLocation = w.getLocation(gen.nextInt(locs));
 	}
 	
 	public void printStory() {
-		System.out.println("It was "+killer.getName()+" killing "+victim.getName()+" with "
+		System.out.println("It was "+killer.getFullName()+" killing "+victim.getFullName()+" with "
 				+murderWeapon.getName()+" in "+murderLocation.getName());
 	}
 }

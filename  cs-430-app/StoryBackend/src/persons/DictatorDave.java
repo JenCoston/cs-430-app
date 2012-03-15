@@ -1,11 +1,13 @@
 package persons;
 
+import locations.Dislexia;
+
 
 public class DictatorDave extends NPC {
 	private static DictatorDave t;
 	
 	private DictatorDave() {
-		super("Dictator Dave of Dislexia");
+		super("Dictator Dave", Dislexia.getDislexia());
 	}
 	
 	public static DictatorDave getDictatorDave() {

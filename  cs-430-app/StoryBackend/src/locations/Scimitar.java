@@ -1,27 +1,28 @@
 package locations;
 
-public class Concordia extends Location {
-	private static Concordia t;
+public class Scimitar extends Location {
+	private static Scimitar t;
 	
-	private Concordia() {
-		super("Concordia", "A county of flat plains");
+	private Scimitar() {
+		super("Scimitar", "A vast desert dotted with oases");
 	}
 	
-	public static Concordia getConcordia() {
+	public static Scimitar getScimitar() {
 		if (t==null)
-			t = new Concordia();
+			t = new Scimitar();
 		return t;
 	}
-
+	
 	@Override
 	public void enter() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void leave() {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 }
