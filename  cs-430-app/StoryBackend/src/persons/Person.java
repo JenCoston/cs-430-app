@@ -11,17 +11,11 @@ public abstract class Person {
 	private String name;
 	private ArrayList<Item> inventory;
 	private Location currentLocation;
-	private int state;
-	protected ArrayList<String> dialog;
-	protected ArrayList<String> descs;
 	private String acceptance;
 	
 	public Person(String name) {
 		this.name = name;
-		descs = new ArrayList<String>();
-		dialog = new ArrayList<String>();
 		inventory = new ArrayList<Item>();
-		state = 0;
 	}
 	
 	public String getName() {
@@ -38,16 +32,6 @@ public abstract class Person {
 				return true;
 		}
 		return false;
-	}
-	
-	public void setDescriptions(String... descs) {
-		for (int i=0; i<descs.length; i++)
-			this.descs.add(descs[i]);
-	}
-	
-	public void setDialog(String... choices) {
-		for (int i=0; i<choices.length; i++)
-			dialog.add(choices[i]);
 	}
 	
 	public void addItems(Item... items) {
@@ -89,14 +73,6 @@ public abstract class Person {
 	
 	public Location getCurrentLocation() {
 		return currentLocation;
-	}
-	
-	public String getDescription() {
-		return descs.get(state);
-	}
-	
-	public String getDialog() {
-		return dialog.get(state);
 	}
 	
 	public void setCurrentLocation(Location loc) {
