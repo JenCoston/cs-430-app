@@ -6,6 +6,7 @@ public class Player extends Person {
 	
 	private Player() {
 		super("");
+		setAcceptance("");
 	}
 	
 	public void setUpPlayer(String name) {

@@ -2,16 +2,16 @@ package persons;
 
 import locations.Wallaby;
 
-public class ArchdukeAlex extends NPC {
-	private static ArchdukeAlex t;
+public class PharaohFineas extends NPC {
+	private static PharaohFineas t;
 	
-	private ArchdukeAlex() {
-		super("Archduke Alex", Wallaby.getWallaby());
+	private PharaohFineas() {
+		super("Pharaoh Fineas", Wallaby.getWallaby());
 	}
 		
-	public static ArchdukeAlex getArchdukeAlex() {
+	public static PharaohFineas getPharaohFineas() {
 		if (t==null)
-			t = new ArchdukeAlex();
+			t = new PharaohFineas();
 		return t;
 	}
 	

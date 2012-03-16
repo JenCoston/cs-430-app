@@ -13,14 +13,14 @@ import locations.Scimitar;
 import locations.Wallaby;
 
 import persons.AmbassadorAmber;
-import persons.ArchdukeAlex;
+import persons.PharaohFineas;
 import persons.ChancellorChuck;
 import persons.Person;
 import persons.DictatorDave;
 import persons.EmperorEddy;
 import persons.PresidentPaul;
 import persons.KingCarl;
-import persons.PrimeMinisterPatricia;
+import persons.PrimeMinisterPatrick;
 import persons.QueenLizzy;
 import persons.SultanSam;
 
@@ -49,9 +49,9 @@ public class World {
 					AmbassadorAmber.getAmbassadorAmber(),
 					QueenLizzy.getQueenLizzy(),
 					ChancellorChuck.getChancellorChuck(),
-					PrimeMinisterPatricia.getPrimeMinisterPatricia(),
+					PrimeMinisterPatrick.getPrimeMinisterPatrick(),
 					SultanSam.getSultanSam(),
-					ArchdukeAlex.getArchdukeAlex()
+					PharaohFineas.getPharaohFineas()
 		};
 		this.people = people;
 	}
