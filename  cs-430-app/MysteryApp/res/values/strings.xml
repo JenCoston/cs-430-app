@@ -34,5 +34,6 @@
     <string name="tmpplay">Not sure how this will be</string>
     <string name="map">View the Map</string>
     <string name="menu">View In-Game Menu</string>
+    <string name="blank"></string>
 
 </resources>
