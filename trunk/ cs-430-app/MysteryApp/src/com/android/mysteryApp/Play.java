@@ -67,4 +67,9 @@ public class Play extends Activity {
         Intent i = new Intent(getApplicationContext(), Menu.class);
         startActivity(i);
 	}
+	
+	public void startMinesweeper(View view){
+		Intent i = new Intent(getApplicationContext(), MinesweeperActivity.class);
+        startActivity(i);
+	}
 }

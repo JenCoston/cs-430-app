@@ -42,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.62"
                 android:background="@drawable/bomb"
+                android:onClick="startMinesweeper"
                 android:text="@string/blank" />
 
             <Button
