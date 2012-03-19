@@ -29,4 +29,26 @@ public interface FileStructure {
 	final String PRIME_MINISTER_PATRICK = "";
 	final String QUEEN_LIZZY = "";
 	final String SULTAN_SAM = "";
+	
+	final String AMBROSIA = "";
+	final String CONCORDIA = "";
+	final String DISLEXIA = "";
+	final String EDENBOROUGH = "";
+	final String KEYSER = "";
+	final String ORIENT = "";
+	final String PACIFICA = "";
+	final String PEORIA = "";
+	final String SCIMITAR = "";
+	final String WALLABY = "";
+	
+	final String BOMB = "";
+	final String CEREMONIAL_SWORD = "";
+	final String DAGGER = "";
+	final String GAVEL = "";
+	final String PISTOL = "";
+	final String POISON = "";
+	final String ROPE = "";
+	final String ROYAL_SCEPTER = "";
+	final String STAFF = "";
+	final String FIRE = "";
 }
