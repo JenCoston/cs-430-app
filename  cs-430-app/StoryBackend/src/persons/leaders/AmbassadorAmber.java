@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Ambrosia;
 
-public class AmbassadorAmber extends NPC {
+public class AmbassadorAmber extends Leader {
 	private static AmbassadorAmber t;
 		
 	private AmbassadorAmber() {

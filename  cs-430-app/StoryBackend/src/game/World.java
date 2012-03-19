@@ -1,5 +1,10 @@
-package main;
+package game;
 
+import items.CeremonialSword;
+import items.Item;
+import items.JeweledLei;
+import items.RoyalScepter;
+import items.SmallPistol;
 import locations.Ambrosia;
 import locations.Concordia;
 import locations.Edenborough;
@@ -12,26 +17,29 @@ import locations.Peoria;
 import locations.Scimitar;
 import locations.Wallaby;
 
-import persons.AmbassadorAmber;
-import persons.PharaohFineas;
-import persons.ChancellorChuck;
-import persons.Person;
-import persons.DictatorDave;
-import persons.EmperorEddy;
-import persons.PresidentPaul;
-import persons.KingCarl;
-import persons.PrimeMinisterPatrick;
-import persons.QueenLizzy;
-import persons.SultanSam;
+import persons.Leader;
+import persons.leaders.AmbassadorAmber;
+import persons.leaders.ChancellorChuck;
+import persons.leaders.DictatorDave;
+import persons.leaders.EmperorEddy;
+import persons.leaders.KingCarl;
+import persons.leaders.PharaohFineas;
+import persons.leaders.PresidentPaul;
+import persons.leaders.PrimeMinisterPatrick;
+import persons.leaders.QueenLizzy;
+import persons.leaders.SultanSam;
 
 public class World {
 	private static World w;
-	private Person[] people;
+	private Leader[] leaders;
+	//private NonPlayer[] bystanders;
 	private Location[] locations;
+	private int itemCount;
 	
 	private World() {
-		populatePeople();
+		populateLeaders();
 		populateLocations();
+		itemCount = 10;
 	}
 	
 	public static World getWorld() {
@@ -40,8 +48,8 @@ public class World {
 		return w;
 	}
 	
-	private void populatePeople() {
-		Person[] people = {
+	private void populateLeaders() {
+		Leader[] leaders = {
 					DictatorDave.getDictatorDave(),
 					EmperorEddy.getEmperorEddy(),
 					PresidentPaul.getPresidentPaul(),
@@ -53,7 +61,7 @@ public class World {
 					SultanSam.getSultanSam(),
 					PharaohFineas.getPharaohFineas()
 		};
-		this.people = people;
+		this.leaders = leaders;
 	}
 	
 	private void populateLocations() {
@@ -72,10 +80,10 @@ public class World {
 		this.locations = locations;
 	}
 	
-	public Person getPerson(int p) {
-		if (p>=people.length)
+	public Leader getLeader(int p) {
+		if (p>=leaders.length)
 			return null;
-		return people[p];
+		return leaders[p];
 	}
 	
 	public Location getLocation(int l) {
@@ -85,10 +93,38 @@ public class World {
 	}
 
 	public int getPersonCount() {
-		return people.length;
+		return leaders.length;
 	}
 	
 	public int getLocationCount() {
 		return locations.length;
+	}
+	
+	public int getItemCount() {
+		return itemCount;
+	}
+	
+	public Item getItem(int id) {
+		Item result;
+		switch (id) {
+			case 0:
+				result = new CeremonialSword();
+				break;
+			case 1:
+				result = new JeweledLei();
+				break;
+			case 2:
+				result = new RoyalScepter();
+				break;
+			default:
+				result = new SmallPistol();
+		}
+		return result;
+	}
+	
+	public void printWorld() {
+		for (int i=0; i<locations.length; i++) {
+			locations[i].print();
+		}
 	}
 }

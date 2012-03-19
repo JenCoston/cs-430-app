@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Scimitar;
 
-public class SultanSam extends NPC {
+public class SultanSam extends Leader {
 	private static SultanSam t;
 	
 	private SultanSam() {

@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Concordia;
 
-public class ChancellorChuck extends NPC {
+public class ChancellorChuck extends Leader {
 	private static ChancellorChuck t;
 		
 	private ChancellorChuck() {

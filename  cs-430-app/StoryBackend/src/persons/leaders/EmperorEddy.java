@@ -1,9 +1,10 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Orient;
 
 
-public class EmperorEddy extends NPC {
+public class EmperorEddy extends Leader {
 	private static EmperorEddy t;
 	
 	private EmperorEddy() {

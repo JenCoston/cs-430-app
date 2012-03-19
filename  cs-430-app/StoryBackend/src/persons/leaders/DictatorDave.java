@@ -1,9 +1,10 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Dislexia;
 
 
-public class DictatorDave extends NPC {
+public class DictatorDave extends Leader {
 	private static DictatorDave t;
 	
 	private DictatorDave() {

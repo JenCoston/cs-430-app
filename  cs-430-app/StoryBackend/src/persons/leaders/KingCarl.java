@@ -1,9 +1,10 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Keyser;
 
 
-public class KingCarl extends NPC {
+public class KingCarl extends Leader {
 	private static KingCarl t;
 	
 	private KingCarl() {
