@@ -29,6 +29,7 @@
         <activity android:name=".NewGame"></activity>
         <activity android:name=".Play"></activity>
         <activity android:name=".SaveQuit"></activity>
+        <activity android:name=".MinesweeperActivity"></activity>
     </application>
 
 </manifest>
