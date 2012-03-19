@@ -2,7 +2,6 @@ package persons;
 
 import items.Item;
 
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 import locations.Location;
@@ -13,7 +12,6 @@ public abstract class Person {
 	private ArrayList<Item> inventory;
 	private Location currentLocation;
 	private String acceptance;
-	private BufferedImage picture;
 	
 	public Person(String name) {
 		this.name = name;
