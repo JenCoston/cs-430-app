@@ -1,21 +1,23 @@
 package locations;
 
+import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Set;
 
-import persons.Person;
+import persons.NonPlayer;
 
 import items.Item;
 
 public abstract class Location {
 	private String name;
-	private Hashtable<String, Person> people;
+	private Hashtable<String, NonPlayer> npcs;
 	private Hashtable<String, Item> items;
 	private String desc;
 	private int state;
 	
 	public Location(String n, String description) {
 		name = n;
-		people = new Hashtable<String, Person>();
+		npcs = new Hashtable<String, NonPlayer>();
 		items = new Hashtable<String, Item>();
 		desc = description;
 	}
@@ -28,15 +30,23 @@ public abstract class Location {
 		return desc;
 	}
 	
-	public void addPersons(Person... persons) {
-		for (int i=0; i<persons.length; i++) {
-			people.put(persons[i].getName().toLowerCase(), persons[i]);
+	public void addNonPlayers(NonPlayer... nonPlayers) {
+		NonPlayer n;
+		for (int i=0; i<nonPlayers.length; i++) {
+			n = nonPlayers[i];
+			n.getCurrentLocation().removePersons(n.getName());
+			n.setCurrentLocation(this);
+			npcs.put(nonPlayers[i].getName().toLowerCase(), nonPlayers[i]);
 		}
 	}
 	
-	public void removePersons(String... personNames) {
-		for (int i=0; i<personNames.length; i++)
-			people.remove(personNames[i].toLowerCase());
+	public void removePersons(String... npcNames) {
+		String lower;
+		for (int i=0; i<npcNames.length; i++) {
+			lower = npcNames[i].toLowerCase();
+			if (npcs.containsKey(lower))
+				npcs.remove(lower);
+		}
 	}
 	
 	public void addItems(Item... items) {
@@ -68,4 +78,13 @@ public abstract class Location {
 		state = i;
 	}
 
+	public void print() {
+		System.out.println(name);
+		Enumeration<String> nE = npcs.keys();
+		while (nE.hasMoreElements())
+			System.out.printf("\t%s\n",npcs.get((String) nE.nextElement()).getFullName());
+		Enumeration<String> iE = items.keys();
+		while (iE.hasMoreElements())
+			System.out.printf("\t%s\n",items.get((String) iE.nextElement()).getName());
+	}
 }

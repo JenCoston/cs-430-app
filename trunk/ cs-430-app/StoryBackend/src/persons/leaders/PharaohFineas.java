@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Wallaby;
 
-public class PharaohFineas extends NPC {
+public class PharaohFineas extends Leader {
 	private static PharaohFineas t;
 	
 	private PharaohFineas() {

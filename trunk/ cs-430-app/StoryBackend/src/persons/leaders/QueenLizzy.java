@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Edenborough;
 
-public class QueenLizzy extends NPC {
+public class QueenLizzy extends Leader {
 	private static QueenLizzy t;
 		
 	private QueenLizzy() {

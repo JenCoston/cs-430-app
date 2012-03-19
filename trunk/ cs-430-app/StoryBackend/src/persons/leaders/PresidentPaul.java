@@ -1,9 +1,10 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Pacifica;
 
 
-public class PresidentPaul extends NPC {
+public class PresidentPaul extends Leader {
 	private static PresidentPaul t;
 	
 	private PresidentPaul() {

@@ -1,8 +1,9 @@
-package persons;
+package persons.leaders;
 
+import persons.Leader;
 import locations.Peoria;
 
-public class PrimeMinisterPatrick extends NPC {
+public class PrimeMinisterPatrick extends Leader {
 	private static PrimeMinisterPatrick t;
 	
 	private PrimeMinisterPatrick() {

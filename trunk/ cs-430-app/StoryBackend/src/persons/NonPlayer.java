@@ -5,18 +5,19 @@ import java.util.ArrayList;
 import locations.Location;
 
 
-public abstract class NPC extends Person {
+public abstract class NonPlayer extends Person {
 	private Location home;
 	protected ArrayList<String> dialog;
 	protected ArrayList<String> descs;
 	private int state;
 	
-	public NPC(String name, Location loc) {
+	public NonPlayer(String name, Location loc) {
 		super(name);
 		descs = new ArrayList<String>();
 		dialog = new ArrayList<String>();
 		home = loc;
 		state = 0;
+		setCurrentLocation(home);
 	}
 	
 	public String getFullName() {
