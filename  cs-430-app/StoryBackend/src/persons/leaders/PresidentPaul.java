@@ -9,6 +9,8 @@ public class PresidentPaul extends Leader {
 	
 	private PresidentPaul() {
 		super("President Paul", Pacifica.getPacifica());
+		setDescriptions("The charismatic chief executive of Pacifica");
+		setDialog("Well hello there!  Now what do you think of all this?");
 	}
 	
 	public static PresidentPaul getPresidentPaul() {

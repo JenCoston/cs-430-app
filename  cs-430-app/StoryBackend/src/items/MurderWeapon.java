@@ -18,13 +18,13 @@ public abstract class MurderWeapon extends Item {
 				m = new RoyalScepter();
 				break;
 			case 1:
-				m = new JeweledLei();
+				m = new Rope();
 				break;
 			case 2:
 				m = new CeremonialSword();
 				break;
 			default:
-				m = new SmallPistol();
+				m = new Pistol();
 		}
 		return m;
 	}

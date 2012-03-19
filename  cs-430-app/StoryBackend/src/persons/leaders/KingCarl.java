@@ -9,6 +9,8 @@ public class KingCarl extends Leader {
 	
 	private KingCarl() {
 		super("King Carl", Keyser.getKeyser());
+		setDescriptions("The enlightened despot of Keyser");
+		setDialog("Greetings.  Do you know anyone good at solving mysteries?");
 	}
 	
 	public static KingCarl getKingCarl() {

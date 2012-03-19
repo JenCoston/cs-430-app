@@ -8,6 +8,8 @@ public class PharaohFineas extends Leader {
 	
 	private PharaohFineas() {
 		super("Pharaoh Fineas", Wallaby.getWallaby());
+		setDescriptions("The stoic Wallabian head of state");
+		setDialog("Hello.");
 	}
 		
 	public static PharaohFineas getPharaohFineas() {

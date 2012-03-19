@@ -8,6 +8,8 @@ public class SultanSam extends Leader {
 	
 	private SultanSam() {
 		super("Sultan Sam", Scimitar.getScimitar());
+		setDescriptions("The Scimitar governing head");
+		setDialog("Greetings.  We could use some help sorting this out.");
 	}
 		
 	public static SultanSam getSultanSam() {

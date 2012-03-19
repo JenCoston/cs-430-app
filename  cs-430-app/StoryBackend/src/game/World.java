@@ -1,10 +1,16 @@
 package game;
 
+import items.Bomb;
 import items.CeremonialSword;
+import items.Dagger;
+import items.Fire;
+import items.Gavel;
 import items.Item;
-import items.JeweledLei;
+import items.Poison;
+import items.Rope;
 import items.RoyalScepter;
-import items.SmallPistol;
+import items.Pistol;
+import items.Staff;
 import locations.Ambrosia;
 import locations.Concordia;
 import locations.Edenborough;
@@ -111,13 +117,31 @@ public class World {
 				result = new CeremonialSword();
 				break;
 			case 1:
-				result = new JeweledLei();
+				result = new Rope();
 				break;
 			case 2:
 				result = new RoyalScepter();
 				break;
+			case 3:
+				result = new Bomb();
+				break;
+			case 4:
+				result = new Fire();
+				break;
+			case 5:
+				result = new Gavel();
+				break;
+			case 6:
+				result = new Poison();
+				break;
+			case 7:
+				result = new Staff();
+				break;
+			case 8:
+				result = new Dagger();
+				break;
 			default:
-				result = new SmallPistol();
+				result = new Pistol();
 		}
 		return result;
 	}

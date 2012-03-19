@@ -9,6 +9,8 @@ public class DictatorDave extends Leader {
 	
 	private DictatorDave() {
 		super("Dictator Dave", Dislexia.getDislexia());
+		setDescriptions("The sole holder of Dislexian authority");
+		setDialog("Interesting situation here...");
 	}
 	
 	public static DictatorDave getDictatorDave() {
