@@ -16,7 +16,7 @@ public class Play extends Activity {
         String background = extras.getString("background");
         if(background.compareToIgnoreCase("background1") == 0){
         	LinearLayout linLay = (LinearLayout) findViewById(R.id.linearLayout1);
-        	linLay.setBackgroundResource(R.drawable.background1full);
+        	linLay.setBackgroundResource(R.drawable.background1full);	
         }
         else if(background.compareToIgnoreCase("background2") == 0){
         	LinearLayout linLay = (LinearLayout) findViewById(R.id.linearLayout1);
