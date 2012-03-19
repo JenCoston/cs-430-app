@@ -18,4 +18,44 @@ public class Map extends Activity {
         Intent i = new Intent(getApplicationContext(), MysteryAppActivity.class);
         startActivity(i);
     }
+    
+    public void startBackground1(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startBackground2(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startBackground3(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startChina2(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startCity1(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startEgypt(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startRussia1(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
+    
+    public void startRussia2(View view){
+    	Intent i = new Intent(getApplicationContext(), Play.class);
+        startActivity(i);
+    }
 }

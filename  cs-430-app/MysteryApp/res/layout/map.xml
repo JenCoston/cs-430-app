@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/background1"
+            android:onClick="startBackground1"
             android:text="@string/blank" />
 
         <TextView
@@ -43,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/background3"
+            android:onClick="startBackground3"
             android:text="@string/blank" />
 
         <TextView
@@ -59,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/background2"
+            android:onClick="startBackground2"
             android:text="@string/blank" />
     </LinearLayout>
 
@@ -94,6 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/china2"
+                android:onClick="startChina2"
                 android:text="@string/blank" />
 
             <TextView
@@ -110,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/city1"
+                android:onClick="startCity1"
                 android:text="@string/blank" />
         </TableRow>
 
@@ -125,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/egypt"
+                android:onClick="startEgypt"
                 android:text="@string/blank" />
 
             <TextView
@@ -141,6 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/russia1"
+                android:onClick="startRussia1"
                 android:text="@string/blank" />
 
             <TextView
@@ -172,6 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/russia2"
+                android:onClick="startRussia2"
                 android:text="@string/blank" />
 
             <TextView
