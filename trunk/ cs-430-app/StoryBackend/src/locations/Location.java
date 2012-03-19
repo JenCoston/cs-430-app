@@ -79,12 +79,25 @@ public abstract class Location {
 	}
 
 	public void print() {
-		System.out.println(name);
+		System.out.print(name);
+		System.out.println(" - "+desc);
 		Enumeration<String> nE = npcs.keys();
-		while (nE.hasMoreElements())
-			System.out.printf("\t%s\n",npcs.get((String) nE.nextElement()).getFullName());
+		String s;
+		Item i;
+		NonPlayer n;
+		while (nE.hasMoreElements()) {
+			s = nE.nextElement();
+			n = npcs.get(s);
+			System.out.printf("\t%s",n.getFullName());
+			System.out.println(" - "+n.getDescription());
+			System.out.printf("\t\tsays: %s\n", n.getDialog());
+		}
 		Enumeration<String> iE = items.keys();
-		while (iE.hasMoreElements())
-			System.out.printf("\t%s\n",items.get((String) iE.nextElement()).getName());
+		while (iE.hasMoreElements()) {
+			s = iE.nextElement();
+			i = items.get(s);
+			System.out.printf("\t%s",i.getName());
+			System.out.println(" - "+i.getDescription());
+		}
 	}
 }

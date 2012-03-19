@@ -8,6 +8,8 @@ public class QueenLizzy extends Leader {
 		
 	private QueenLizzy() {
 		super("Queen Lizzy", Edenborough.getEdenborough());
+		setDescriptions("Her royal highness of Edenborough");
+		setDialog("Oh dear what a shame this is!");
 	}
 		
 	public static QueenLizzy getQueenLizzy() {

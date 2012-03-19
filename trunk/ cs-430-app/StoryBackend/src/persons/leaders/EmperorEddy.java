@@ -9,6 +9,8 @@ public class EmperorEddy extends Leader {
 	
 	private EmperorEddy() {
 		super("Emperor Eddy", Orient.getOrient());
+		setDescriptions("Orient's fearless ruler");
+		setDialog("Hello.  What a complication this is!");
 	}
 	
 	public static EmperorEddy getEmperorEddy() {

@@ -8,6 +8,8 @@ public class AmbassadorAmber extends Leader {
 		
 	private AmbassadorAmber() {
 		super("Ambassador Amber", Ambrosia.getAmbrosia());
+		setDescriptions("A dignified Ambrosian leader");
+		setDialog("Good day!  Quite a mess, this murder bit.");
 	}
 		
 	public static AmbassadorAmber getAmbassadorAmber() {

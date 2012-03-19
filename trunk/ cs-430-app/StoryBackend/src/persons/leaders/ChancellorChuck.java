@@ -8,6 +8,8 @@ public class ChancellorChuck extends Leader {
 		
 	private ChancellorChuck() {
 		super("Chancellor Chuck", Concordia.getConcordia());
+		setDescriptions("Condordia's beloved executive");
+		setDialog("What a dreadful deed that has been done!");
 	}
 		
 	public static ChancellorChuck getChancellorChuck() {

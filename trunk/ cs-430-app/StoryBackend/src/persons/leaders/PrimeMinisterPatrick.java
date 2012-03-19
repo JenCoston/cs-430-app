@@ -8,6 +8,8 @@ public class PrimeMinisterPatrick extends Leader {
 	
 	private PrimeMinisterPatrick() {
 		super("Prime Minister Patrick", Peoria.getPeoria());
+		setDescriptions("Peoria's esteemed leader");
+		setDialog("Pleased to meet you... any chance you are a detective?");
 	}
 		
 	public static PrimeMinisterPatrick getPrimeMinisterPatrick() {
