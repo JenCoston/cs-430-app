@@ -21,41 +21,57 @@ public class Map extends Activity {
     
     public void startBackground1(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+        String value = "background1";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startBackground2(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "background2";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startBackground3(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "background3";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startChina2(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "china2";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startCity1(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "city1";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startEgypt(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "egypt";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startRussia1(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "russia1";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
     
     public void startRussia2(View view){
     	Intent i = new Intent(getApplicationContext(), Play.class);
-        startActivity(i);
+    	String value = "russia2";
+		i.putExtra("background", value);
+    	startActivity(i);
     }
 }
