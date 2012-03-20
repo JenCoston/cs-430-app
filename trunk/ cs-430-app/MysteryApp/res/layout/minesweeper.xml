@@ -5,16 +5,17 @@
     android:stretchColumns="0,2"
     android:background="@drawable/back">
     <TableRow>
+
 		<TextView
-			android:id="@+id/Timer"
-			android:layout_column="0"
-			android:layout_width="fill_parent"
-			android:layout_height="48px"
-			android:gravity="center_horizontal"
-			android:padding="5dip" 
-			android:textColor="#FFFFFF"
-			android:textSize="40sp"
-			android:text="000" />
+		    android:id="@+id/Timer"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_column="0"
+		    android:gravity="center_horizontal"
+		    android:padding="5dip"
+		    android:text="000"
+		    android:textColor="#FFFFFF"
+		    android:textSize="40sp" />
 			
 		<ImageButton android:id="@+id/Smiley"
 			android:layout_column="1"
@@ -25,15 +26,16 @@
 			android:layout_height="48px"/>
 		
 		<TextView
-			android:id="@+id/MineCount"
-			android:layout_column="2"
-			android:layout_width="fill_parent"
-			android:layout_height="48px"
-			android:gravity="center_horizontal"
-			android:padding="5dip" 
-			android:textColor="#FFFFFF"
-			android:textSize="40sp"
-			android:text="000" />
+		    android:id="@+id/MineCount"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_column="2"
+		    android:gravity="center_horizontal"
+		    android:padding="5dip"
+		    android:text="000"
+		    android:textColor="#FFFFFF"
+		    android:textSize="40sp" />
+
     </TableRow>
     
 	<TableRow>
@@ -46,14 +48,18 @@
 	</TableRow>
 		
     <TableRow>
-		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    		android:id="@+id/MineField"
-    		android:layout_width="260px"
-		    android:layout_height="260px"
-		    android:gravity="bottom"
-		    android:stretchColumns="*"
+
+		<TableLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/MineField"
+		    android:layout_width="260px"
+		    android:layout_height="300px"
 		    android:layout_span="3"
-		    android:padding="5dip" >
+		    android:layout_weight="1"
+		    android:gravity="bottom"
+		    android:padding="5dip"
+		    android:stretchColumns="*" >
+
 		</TableLayout>
     </TableRow>
 

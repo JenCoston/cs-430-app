@@ -58,6 +58,7 @@ public class Block extends Button
 	public void setMineIcon(boolean enabled)
 	{
 		this.setText("M");
+		this.setTextSize(10);
 
 		if (!enabled)
 		{
