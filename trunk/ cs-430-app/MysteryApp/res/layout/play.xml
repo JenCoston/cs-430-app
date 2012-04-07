@@ -26,21 +26,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" >
-
+
             <Button
                 android:id="@+id/button1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="map"
                 android:text="@string/map" />
-
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="meetChar"
+                android:text="@string/meet" />
+
             <Button
                 android:id="@+id/button3"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.62"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:background="@drawable/bomb"
                 android:onClick="startMinesweeper"
                 android:text="@string/blank" />
@@ -62,12 +70,11 @@
         android:id="@+id/tableLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-
+
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
         </TableRow>
 
         <TableRow
