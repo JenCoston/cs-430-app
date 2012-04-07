@@ -13,7 +13,7 @@
     <string name="Quit">Quit Game</string>
     <string name="Char">Use Existing Character</string>
     <string name="New_Char">Create a New Character</string>
-    <string name="Return">Return to Main Menu</string>
+    <string name="Return">Main</string>
     <string name="Cancel">Cancel</string>
     <string name="Submit">Submit</string>
     <string name="Name">Enter your username</string>
@@ -35,5 +35,13 @@
     <string name="map">View the Map</string>
     <string name="menu">View In-Game Menu</string>
     <string name="blank"></string>
+    <string name="talk">Talk</string>
+    <string name="item">Item</string>
+    <string name="meet">"Meet "</string>
+    <string name="explore">Explore</string>
+    <string name="gather">Gather</string>
+    <string name="playing">Play</string>
+    <string name="mapS">Map</string>
+    <string name="look">Look</string>
 
 </resources>
