@@ -68,8 +68,14 @@ public class Play extends Activity {
         startActivity(i);
 	}
 	
+	public void meetChar(View view){
+		Intent i = new Intent(getApplicationContext(), Ambassador.class);
+        startActivity(i);
+	}
+	
 	public void startMinesweeper(View view){
 		Intent i = new Intent(getApplicationContext(), MinesweeperActivity.class);
         startActivity(i);
-	}
+	}	
+	
 }
