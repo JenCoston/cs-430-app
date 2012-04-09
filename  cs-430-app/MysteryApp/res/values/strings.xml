@@ -43,5 +43,6 @@
     <string name="playing">Play</string>
     <string name="mapS">Map</string>
     <string name="look">Look</string>
+    <string name="disclaimer">Disclaimers</string>
 
 </resources>

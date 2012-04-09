@@ -40,6 +40,12 @@ public class MysteryAppActivity extends Activity {
         startActivity(i);
     }
     
+    public void showDisclaimers(View view){    
+    	// View Disclaimers
+        Intent i = new Intent(getApplicationContext(), Disclaimer.class);
+        startActivity(i);
+    }
+    
     public void quit(View view){   
         // Quit Game
     }
