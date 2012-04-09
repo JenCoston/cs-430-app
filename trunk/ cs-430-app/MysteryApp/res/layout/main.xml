@@ -101,5 +101,12 @@
         android:layout_height="wrap_content"
         android:text="@string/Quit" 
         android:onClick="quit"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disclaimer" 
+        android:onClick="showDisclaimers"/>
 
 </LinearLayout>

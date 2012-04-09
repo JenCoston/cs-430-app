@@ -57,7 +57,7 @@ public class EdenboroughPlace extends Activity {
 		dialog.setGravity(Gravity.CENTER, 0, 0);
 		LinearLayout dialogView = (LinearLayout) dialog.getView();
 		ImageView coolImage = new ImageView(getApplicationContext());
-		coolImage.setImageResource(R.drawable.emperor3_head);
+		coolImage.setImageResource(R.drawable.queen2_head);
 		dialogView.addView(coolImage, 0);
 		dialog.setDuration(milliseconds);
 		dialog.show();
