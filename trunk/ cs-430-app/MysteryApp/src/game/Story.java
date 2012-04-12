@@ -9,6 +9,7 @@ import java.util.Random;
 import locations.Location;
 
 import persons.Leader;
+import persons.NonPlayer;
 
 public class Story {
 	private Leader killer;
@@ -106,5 +107,12 @@ public class Story {
 	public void advanceInterestingLocation() {
 		interestingLoc++;
 		locs.get(interestingLoc).makeInteresting();
+	}
+	
+	public boolean isVictim(NonPlayer np) {
+		if (np.getName().equalsIgnoreCase(victim.getName()))
+			return true;
+		else
+			return false;
 	}
 }
