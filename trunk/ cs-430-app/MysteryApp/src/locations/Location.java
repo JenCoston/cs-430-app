@@ -100,4 +100,15 @@ public abstract class Location {
 			System.out.println(" - "+i.getDescription());
 		}
 	}
+
+	public void makeInteresting() {
+		Enumeration<String> nE = npcs.keys();
+		String s;
+		NonPlayer n;
+		while (nE.hasMoreElements()) {
+			s = nE.nextElement();
+			n = npcs.get(s);
+			n.nextState();
+		}
+	}
 }

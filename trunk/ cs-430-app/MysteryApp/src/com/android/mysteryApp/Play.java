@@ -1,5 +1,6 @@
 package com.android.mysteryApp;
 
+import persons.activities.Ambassador;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

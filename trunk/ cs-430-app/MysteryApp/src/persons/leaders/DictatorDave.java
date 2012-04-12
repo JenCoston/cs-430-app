@@ -27,9 +27,9 @@ public class DictatorDave extends Leader {
 
 	@Override
 	public String converse() {
-		// TODO Auto-generated method stub
-		String hint = "Did you ask some of the common folk!";
-		return hint;
-		
+		//For now
+		//String hint = "Did you ask some of the common folk!";
+		//return hint;
+		return getDialog();
 	}
 }

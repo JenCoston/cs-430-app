@@ -27,8 +27,8 @@ public class QueenLizzy extends Leader {
 	@Override
 	public String converse() {
 		// TODO Auto-generated method stub
-		String hint = "Oh me Oh my!";
-		return hint;
-		
+//		String hint = "Oh me Oh my!";
+//		return hint;
+		return getDialog();
 	}
 }

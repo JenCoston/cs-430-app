@@ -26,9 +26,9 @@ public class AmbassadorAmber extends Leader {
 
 	@Override
 	public String converse() {
-		// TODO Auto-generated method stub
-		String hint = "I hope they don't trace me to this murder!";
-		return hint;
-		
+		//for now
+		//String hint = "I hope they don't trace me to this murder!";
+		//return hint;
+		return getDialog();
 	}
 }

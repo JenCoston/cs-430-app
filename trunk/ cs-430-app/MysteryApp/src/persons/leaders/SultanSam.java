@@ -27,9 +27,9 @@ public class SultanSam extends Leader {
 	@Override
 	public String converse() {
 		// TODO Auto-generated method stub
-		String hint = "Ask Abu!";
-		return hint;
-		
+//		String hint = "Ask Abu!";
+//		return hint;
+		return getDialog();
 	}
 
 }

@@ -28,8 +28,8 @@ public class PresidentPaul extends Leader {
 	@Override
 	public String converse() {
 		// TODO Auto-generated method stub
-		String hint = "Don't worry I will find out who the culprit is!";
-		return hint;
-		
+//		String hint = "Don't worry I will find out who the culprit is!";
+//		return hint;
+		return getDialog();
 	}
 }

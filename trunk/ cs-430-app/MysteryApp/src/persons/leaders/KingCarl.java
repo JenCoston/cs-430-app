@@ -27,9 +27,9 @@ public class KingCarl extends Leader {
 
 	@Override
 	public String converse() {
-		// TODO Auto-generated method stub
-		String hint = "To the charriot!";
-		return hint;
-		
+		//For now
+		//String hint = "To the charriot!";
+		//return hint;
+		return getDialog();
 	}
 }

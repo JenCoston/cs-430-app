@@ -45,6 +45,7 @@ public class World {
 	private World() {
 		populateLeaders();
 		populateLocations();
+		putLeadersInLocations();
 		itemCount = 10;
 	}
 	
@@ -84,6 +85,19 @@ public class World {
 						Wallaby.getWallaby()
 		};
 		this.locations = locations;
+	}
+	
+	private void putLeadersInLocations() {
+		Dislexia.getDislexia().addNonPlayers(DictatorDave.getDictatorDave());
+		Orient.getOrient().addNonPlayers(EmperorEddy.getEmperorEddy());
+		Pacifica.getPacifica().addNonPlayers(PresidentPaul.getPresidentPaul());
+		Keyser.getKeyser().addNonPlayers(KingCarl.getKingCarl());
+		Ambrosia.getAmbrosia().addNonPlayers(AmbassadorAmber.getAmbassadorAmber());
+		Edenborough.getEdenborough().addNonPlayers(QueenLizzy.getQueenLizzy());
+		Concordia.getConcordia().addNonPlayers(ChancellorChuck.getChancellorChuck());
+		Peoria.getPeoria().addNonPlayers(PrimeMinisterPatrick.getPrimeMinisterPatrick());
+		Scimitar.getScimitar().addNonPlayers(SultanSam.getSultanSam());
+		Wallaby.getWallaby().addNonPlayers(PharaohFineas.getPharaohFineas());
 	}
 	
 	public Leader getLeader(int p) {

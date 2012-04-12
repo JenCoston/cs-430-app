@@ -27,9 +27,9 @@ public class EmperorEddy extends Leader {
 
 	@Override
 	public String converse() {
-		// TODO Auto-generated method stub
-		String hint = "Excuse me but it's about time for the cricket match!";
-		return hint;
-		
+		//For now
+		//String hint = "Excuse me but it's about time for the cricket match!";
+		//return hint;
+		return getDialog();
 	}
 }

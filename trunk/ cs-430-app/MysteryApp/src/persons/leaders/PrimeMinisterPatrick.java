@@ -27,9 +27,9 @@ public class PrimeMinisterPatrick extends Leader {
 	@Override
 	public String converse() {
 		// TODO Auto-generated method stub
-		String hint = "Talk to the Queen, not me!";
-		return hint;
-		
+//		String hint = "Talk to the Queen, not me!";
+//		return hint;
+		return getDialog();
 	}
 
 }

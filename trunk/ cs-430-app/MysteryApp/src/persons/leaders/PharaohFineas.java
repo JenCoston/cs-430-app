@@ -27,9 +27,9 @@ public class PharaohFineas extends Leader {
 	@Override
 	public String converse() {
 		// TODO Auto-generated method stub
-		String hint = "It's too warm out here, can we please talk in my pyramid!";
-		return hint;
-		
+//		String hint = "It's too warm out here, can we please talk in my pyramid!";
+//		return hint;
+		return getDialog();
 	}
 
 }
