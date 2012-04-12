@@ -1,5 +1,7 @@
 package persons;
 
+import game.Story;
+
 import java.util.ArrayList;
 
 import locations.Location;
@@ -39,10 +41,26 @@ public abstract class NonPlayer extends Person {
 	}
 	
 	public String getDialog() {
-		return dialog.get(state);
+		if (state == 0)
+			return getStateZeroDialog();
+		else {
+			Story.getStory().advanceInterestingLocation();
+			state--;
+			//return dialog.get(state-1);
+			return dialog.get(state);
+		}
 	}
 	
 	public abstract void satisfy();
 	
 	public abstract String converse();
+	
+	private String getStateZeroDialog() {
+		return "You should investigate "+Story.getStory().getInterestingLocation();
+	}
+
+	public void nextState() {
+		state++;
+	}
+	
 }

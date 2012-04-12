@@ -16,9 +16,13 @@ public class Story {
 	private Item murderWeapon;
 	private Location murderLocation;
 	private static Story s;
+	private ArrayList<Location> locs;
+	private int interestingLoc;
 	
 	private Story() {
 		generateStory();
+		interestingLoc = 0;
+		locs.get(interestingLoc).makeInteresting();
 	}
 	
 	public static Story getStory() {
@@ -28,21 +32,20 @@ public class Story {
 	}
 	
 	private void generateStory() {
-		ArrayList<Location> locs;
 		ArrayList<Item> items;//
 		World w = World.getWorld();
 		Leader l;
 		Location destination;
 		generateMurder();
 		locs = generateLocationFillSequence();
-		items = generateItemFillSequence();
+		/*items = generateItemFillSequence();
 		for (int i=0; i<locs.size(); i++) {
 			destination = locs.get(i);
 			destination.addItems(items.get(i));
 			l = w.getLeader(i);
 			if (l.getName().equalsIgnoreCase(victim.getName()) == false)
 				destination.addNonPlayers(l);
-		}
+		}*///Not used right now
 	}
 	
 	private void generateMurder() {
@@ -85,7 +88,23 @@ public class Story {
 	}
 	
 	public void printMurder() {
-		System.out.println("It was "+killer.getFullName()+" killing "+victim.getFullName()+" with "
-				+murderWeapon.getName()+" in "+murderLocation.getName());
+		System.out.println(getMurder());
+	}
+	
+	public String getMurder() {
+		return "It was "+killer.getFullName()+" killing "+victim.getFullName()+" with "
+				+murderWeapon.getName()+" in "+murderLocation.getName();
+	}
+
+	public String getInterestingLocation() {
+		if (interestingLoc <= locs.size())
+			return locs.get(interestingLoc).getName();
+		else
+			return null;//REPLACE with error checking later
+	}
+	
+	public void advanceInterestingLocation() {
+		interestingLoc++;
+		locs.get(interestingLoc).makeInteresting();
 	}
 }

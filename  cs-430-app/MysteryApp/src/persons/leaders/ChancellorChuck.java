@@ -26,10 +26,10 @@ public class ChancellorChuck extends Leader {
 
 	@Override
 	public String converse() {
-		// TODO Auto-generated method stub
-		String hint = "Its not my fault!";
-		return hint;
-		
+		//For now
+		//String hint = "Its not my fault!";
+		//return hint;
+		return getDialog();
 	}
 }
 

@@ -1,5 +1,6 @@
 package locations;
 
+
 public class Wallaby extends Location {
 	private static Wallaby t;
 	

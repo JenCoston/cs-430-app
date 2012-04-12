@@ -30,26 +30,26 @@
         <activity android:name=".Play"></activity>
         <activity android:name=".SaveQuit"></activity>
         <activity android:name=".MinesweeperActivity"></activity>
-        <activity android:name=".Ambassador"></activity>
-        <activity android:name=".AmbrosiaPlace"></activity>
-        <activity android:name=".Chancellor"></activity>
-        <activity android:name=".ConcordiaPlace"></activity>
-        <activity android:name=".Dictator"></activity>
-        <activity android:name=".DislexiaPlace"></activity>
-        <activity android:name=".Emperor"></activity>
-        <activity android:name=".OrientPlace"></activity>
-        <activity android:name=".King"></activity>
-        <activity android:name=".KeyserPlace"></activity>
-        <activity android:name=".Pharaoh"></activity>
-        <activity android:name=".WallabyPlace"></activity>
-        <activity android:name=".President"></activity>
-        <activity android:name=".PacificaPlace"></activity>   
-        <activity android:name=".PrimeMinister"></activity>
-        <activity android:name=".PeoriaPlace"></activity>  
-        <activity android:name=".Queen"></activity>     
-        <activity android:name=".EdenboroughPlace"></activity>
-        <activity android:name=".Sultan"></activity>     
-        <activity android:name=".ScimitarPlace"></activity>
+        <activity android:name="persons.activities.Ambassador"></activity>
+        <activity android:name="locations.activities.AmbrosiaPlace"></activity>
+        <activity android:name="persons.activities.Chancellor"></activity>
+        <activity android:name="locations.activities.ConcordiaPlace"></activity>
+        <activity android:name="persons.activities.Dictator"></activity>
+        <activity android:name="locations.activities.DislexiaPlace"></activity>
+        <activity android:name="locations.activities.EdenboroughPlace"></activity>
+        <activity android:name="persons.activities.Emperor"></activity>
+        <activity android:name="locations.activities.KeyserPlace"></activity>
+        <activity android:name="persons.activities.King"></activity>
+        <activity android:name="locations.activities.OrientPlace"></activity>
+        <activity android:name="locations.activities.PacificaPlace"></activity>  
+        <activity android:name="locations.activities.PeoriaPlace"></activity>
+        <activity android:name="persons.activities.Pharaoh"></activity>
+        <activity android:name="persons.activities.President"></activity>
+        <activity android:name="persons.activities.PrimeMinister"></activity>
+        <activity android:name="persons.activities.Queen"></activity>
+        <activity android:name="locations.activities.ScimitarPlace"></activity>   
+        <activity android:name="persons.activities.Sultan"></activity>     
+        <activity android:name="locations.activities.WallabyPlace"></activity>
     </application>
 
 </manifest>
