@@ -8,9 +8,11 @@ public class EmperorEddy extends Leader {
 	private static EmperorEddy t;
 	
 	private EmperorEddy() {
-		super("Emperor Eddy", Orient.getOrient());
-		setDescriptions("Orient's fearless ruler");
-		setDialog("Hello.  What a complication this is!");
+		super("Emperor Eddy",
+				"Orient's fearless ruler",
+				Orient.getOrient(),
+				"Hello.  What a complication this is!",
+				"Excuse me but it's about time for the cricket match!");
 	}
 	
 	public static EmperorEddy getEmperorEddy() {
@@ -23,13 +25,5 @@ public class EmperorEddy extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		//For now
-		//String hint = "Excuse me but it's about time for the cricket match!";
-		//return hint;
-		return getDialog();
 	}
 }

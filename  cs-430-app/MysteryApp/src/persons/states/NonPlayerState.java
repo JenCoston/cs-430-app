@@ -5,7 +5,7 @@ import persons.NonPlayer;
 
 public abstract class NonPlayerState {
 	private int id;
-	private NonPlayer np;
+	private NonPlayer np;//only needed for succes or failure??
 	private String sayBefore;
 	
 	public NonPlayerState(int id, NonPlayer np, String sayBefore) {
@@ -14,7 +14,7 @@ public abstract class NonPlayerState {
 		this.sayBefore = sayBefore;
 	}
 	
-	public abstract boolean Execute(Context context);//call startActivityWithResult in here??
+	public abstract boolean execute(Context context);//call startActivityWithResult in here??
 	
 	public int getId() {
 		return id;

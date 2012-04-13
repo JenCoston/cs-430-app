@@ -90,7 +90,7 @@ public abstract class Location {
 			n = npcs.get(s);
 			System.out.printf("\t%s",n.getFullName());
 			System.out.println(" - "+n.getDescription());
-			System.out.printf("\t\tsays: %s\n", n.getDialog());
+			//System.out.printf("\t\tsays: %s\n", n.getDialog());
 		}
 		Enumeration<String> iE = items.keys();
 		while (iE.hasMoreElements()) {
@@ -101,7 +101,7 @@ public abstract class Location {
 		}
 	}
 
-	public void makeInteresting() {
+	/*public void makeInteresting() {
 		Enumeration<String> nE = npcs.keys();
 		String s;
 		NonPlayer n;
@@ -110,5 +110,5 @@ public abstract class Location {
 			n = npcs.get(s);
 			n.nextState();
 		}
-	}
+	}*/
 }

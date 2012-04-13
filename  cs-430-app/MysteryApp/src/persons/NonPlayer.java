@@ -1,48 +1,42 @@
 package persons;
 
-import game.Story;
+import android.content.Context;
 
-import java.util.ArrayList;
+import persons.states.NonPlayerDialog;
+import persons.states.NonPlayerState;
+import persons.states.StateQueue;
 
 import locations.Location;
 
 
 public abstract class NonPlayer extends Person {
 	private Location home;
-	protected ArrayList<String> dialog;
-	protected ArrayList<String> descs;
-	private int state;//replace with stateQueue - when conversing, call dialog if uninter and call Qhead if interesting
+	private String desc;
+	//private StateQueue stateQueue;
+	private NonPlayerState currentState;
 	private boolean interesting;
+	private NonPlayerDialog dialog;
 	
-	public NonPlayer(String name, Location loc) {
+	public NonPlayer(String name, String desc, Location loc, String... choices) {
 		super(name);
-		descs = new ArrayList<String>();
-		dialog = new ArrayList<String>();
+		this.desc = desc;
 		home = loc;
-		state = 0;
 		setCurrentLocation(home);
+		//stateQueue = new StateQueue();
+		currentState = null;
 		interesting = false;
+		dialog = new NonPlayerDialog(choices);
 	}
 	
 	public String getFullName() {
 		return getName() + " of " + home.getName();
 	}
 	
-	public void setDescriptions(String... descs) {
-		for (int i=0; i<descs.length; i++)
-			this.descs.add(descs[i]);
-	}
-	
-	public void setDialog(String... choices) {
-		for (int i=0; i<choices.length; i++)
-			dialog.add(choices[i]);
-	}
-	
 	public String getDescription() {
-		return descs.get(state);
+		return desc;
 	}
 	
-	public String getDialog() {
+	/*public String getDialog() {
 		if (state == 0)
 			return getStateZeroDialog();
 		else {
@@ -51,22 +45,43 @@ public abstract class NonPlayer extends Person {
 			//return dialog.get(state-1);
 			return dialog.get(state);
 		}
-	}
+	}*/
 	
 	public abstract void satisfy();
 	
-	public abstract String converse();
-	
-	private String getStateZeroDialog() {
-		return "You should investigate "+Story.getStory().getInterestingLocation();
+	public String converse() {
+		if (isInteresting() == false) {
+			return dialog.say();
+		}
+		else {
+			//return stateQueue.head().getSayBefore();
+			return currentState.getSayBefore();
+		}
 	}
-
-	public void nextState() {
-		state++;
+	
+	public void perform(Context context) {
+		//stateQueue.head().execute(context);
+		currentState.execute(context);
 	}
 	
 	public boolean isInteresting() {
+		//if (stateQueue.isEmpty())
+		if (currentState == null)
+			interesting = false;
 		return interesting;
+	}
+	
+	public void makeInteresting() {
+		interesting = true;
+	}
+	
+	public void makeInteresting(NonPlayerState state) {
+		currentState = state;
+		interesting = true;
+	}
+	
+	public void makeUninteresting() {
+		interesting = false;
 	}
 	
 }

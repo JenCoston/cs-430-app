@@ -26,7 +26,7 @@ public class KeyserPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(KingCarl.getKingCarl().getDialog(), 3000, R.drawable.king_head);
+    	showDialog(KingCarl.getKingCarl().getDescription(), 3000, R.drawable.king_head);
     	Intent i = new Intent(getApplicationContext(), King.class);
         startActivity(i);
     }

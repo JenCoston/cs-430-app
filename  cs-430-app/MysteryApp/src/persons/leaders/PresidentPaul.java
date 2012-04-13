@@ -8,9 +8,11 @@ public class PresidentPaul extends Leader {
 	private static PresidentPaul t;
 	
 	private PresidentPaul() {
-		super("President Paul", Pacifica.getPacifica());
-		setDescriptions("The charismatic chief executive of Pacifica");
-		setDialog("Well hello there!  Now what do you think of all this?");
+		super("President Paul",
+				"The charismatic chief executive of Pacifica",
+				Pacifica.getPacifica(),
+				"Well hello there!  Now what do you think of all this?",
+				"Don't worry I will find out who the culprit is!");
 	}
 	
 	public static PresidentPaul getPresidentPaul() {
@@ -23,13 +25,5 @@ public class PresidentPaul extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		// TODO Auto-generated method stub
-//		String hint = "Don't worry I will find out who the culprit is!";
-//		return hint;
-		return getDialog();
 	}
 }

@@ -7,9 +7,11 @@ public class QueenLizzy extends Leader {
 	private static QueenLizzy t;
 		
 	private QueenLizzy() {
-		super("Queen Lizzy", Edenborough.getEdenborough());
-		setDescriptions("Her royal highness of Edenborough");
-		setDialog("Oh dear what a shame this is!");
+		super("Queen Lizzy",
+				"Her royal highness of Edenborough",
+				Edenborough.getEdenborough(),
+				"Oh dear what a shame this is!",
+				"Oh me Oh my!");
 	}
 		
 	public static QueenLizzy getQueenLizzy() {
@@ -22,13 +24,5 @@ public class QueenLizzy extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		// TODO Auto-generated method stub
-//		String hint = "Oh me Oh my!";
-//		return hint;
-		return getDialog();
 	}
 }

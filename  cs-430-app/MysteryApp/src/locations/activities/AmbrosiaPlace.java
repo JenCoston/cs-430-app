@@ -25,7 +25,7 @@ public class AmbrosiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(AmbassadorAmber.getAmbassadorAmber().getDialog(), 3000, R.drawable.ambassador_head);
+    	showDialog(AmbassadorAmber.getAmbassadorAmber().getDescription(), 3000, R.drawable.ambassador_head);
     	Intent i = new Intent(getApplicationContext(), Ambassador.class);
         startActivity(i);
     }

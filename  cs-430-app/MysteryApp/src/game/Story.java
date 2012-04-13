@@ -17,13 +17,15 @@ public class Story {
 	private Item murderWeapon;
 	private Location murderLocation;
 	private static Story s;
-	private ArrayList<Location> locs;
-	private int interestingLoc;
+	private ArrayList<NonPlayer> npcs;
+	private int interestingNPC;
 	
 	private Story() {
 		generateStory();
-		interestingLoc = 0;
-		locs.get(interestingLoc).makeInteresting();
+		interestingNPC = 0;
+		npcs = new ArrayList<NonPlayer>();
+		//fill npcs with states
+		//getInterestingNonPlayer().makeInteresting();
 	}
 	
 	public static Story getStory() {
@@ -33,12 +35,13 @@ public class Story {
 	}
 	
 	private void generateStory() {
-		ArrayList<Item> items;//
+		/*ArrayList<Item> items;//
+		ArrayList<Location> locs;
 		World w = World.getWorld();
 		Leader l;
-		Location destination;
+		Location destination;*/
 		generateMurder();
-		locs = generateLocationFillSequence();
+		//locs = generateLocationFillSequence();
 		/*items = generateItemFillSequence();
 		for (int i=0; i<locs.size(); i++) {
 			destination = locs.get(i);
@@ -55,7 +58,7 @@ public class Story {
 		int persons, locs, weaps;
 		Random gen = new Random();
 		World w = World.getWorld();
-		persons = w.getPersonCount();
+		persons = w.getNonPlayerCount();
 		locs = w.getLocationCount();
 		weaps = MurderWeapon.getWeaponCount();
 		k = gen.nextInt(persons);
@@ -88,6 +91,18 @@ public class Story {
 		return result;
 	}
 	
+	private ArrayList<NonPlayer> generateNonPlayerFillSequence() {
+		World w = World.getWorld();
+		Leader[] leaders = w.getLeaders();
+		ArrayList<NonPlayer> result = new ArrayList<NonPlayer>();
+		for (int i=0; i<leaders.length; i++) {
+			if (leaders[i].getName().equalsIgnoreCase(victim.getName()) == false)
+				result.add(leaders[i]);
+		}
+		Collections.shuffle(result);
+		return result;
+	}
+	
 	public void printMurder() {
 		System.out.println(getMurder());
 	}
@@ -96,17 +111,30 @@ public class Story {
 		return "It was "+killer.getFullName()+" killing "+victim.getFullName()+" with "
 				+murderWeapon.getName()+" in "+murderLocation.getName();
 	}
-
-	public String getInterestingLocation() {
-		if (interestingLoc <= locs.size())
-			return locs.get(interestingLoc).getName();
-		else
-			return null;//REPLACE with error checking later
+	
+	public NonPlayer getInterestingNonPlayer() {
+		ArrayList<NonPlayer> tempNPCs;
+		NonPlayer n;
+		if (interestingNPC >= npcs.size()) {
+			tempNPCs = generateNonPlayerFillSequence();
+			for (int i=0; i<tempNPCs.size(); i++)
+				npcs.add(tempNPCs.get(i));
+			if (npcs.get(interestingNPC-1).getName().equalsIgnoreCase(npcs.get(interestingNPC).getName())) {
+				n = npcs.remove(interestingNPC);
+				npcs.add(n);
+			}
+		}
+		return npcs.get(interestingNPC);
 	}
 	
-	public void advanceInterestingLocation() {
-		interestingLoc++;
-		locs.get(interestingLoc).makeInteresting();
+	public void advanceInterestingNonPlayer() {
+		NonPlayer n = getInterestingNonPlayer();
+		while (n.isInteresting()) {
+			n.makeUninteresting();
+			interestingNPC++;
+			n = getInterestingNonPlayer();
+		}
+		n.makeInteresting();
 	}
 	
 	public boolean isVictim(NonPlayer np) {

@@ -112,7 +112,7 @@ public class World {
 		return locations[l];
 	}
 
-	public int getPersonCount() {
+	public int getNonPlayerCount() {
 		return leaders.length;
 	}
 	
@@ -164,5 +164,9 @@ public class World {
 		for (int i=0; i<locations.length; i++) {
 			locations[i].print();
 		}
+	}
+	
+	public Leader[] getLeaders() {
+		return leaders;
 	}
 }
