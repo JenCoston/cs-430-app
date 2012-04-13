@@ -8,9 +8,11 @@ public class DictatorDave extends Leader {
 	private static DictatorDave t;
 	
 	private DictatorDave() {
-		super("Dictator Dave", Dislexia.getDislexia());
-		setDescriptions("The sole holder of Dislexian authority");
-		setDialog("Interesting situation here...");
+		super("Dictator Dave",
+				"The sole holder of Dislexian authority",
+				Dislexia.getDislexia(),
+				"Interesting situation here...",
+				"Did you ask some of the common folk!");
 	}
 	
 	public static DictatorDave getDictatorDave() {
@@ -23,13 +25,5 @@ public class DictatorDave extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		//For now
-		//String hint = "Did you ask some of the common folk!";
-		//return hint;
-		return getDialog();
 	}
 }

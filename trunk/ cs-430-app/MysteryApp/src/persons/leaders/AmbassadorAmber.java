@@ -7,9 +7,11 @@ public class AmbassadorAmber extends Leader {
 	private static AmbassadorAmber t;
 		
 	private AmbassadorAmber() {
-		super("Ambassador Amber", Ambrosia.getAmbrosia());
-		setDescriptions("A dignified Ambrosian leader");
-		setDialog("Good day!  Quite a mess, this murder bit.");
+		super("Ambassador Amber", 
+				"A dignified Ambrosian leader",
+				Ambrosia.getAmbrosia(),
+				"Good day!  Quite a mess, this murder bit.",
+				"I hope they don't trace me to this murder!");
 	}
 		
 	public static AmbassadorAmber getAmbassadorAmber() {
@@ -22,13 +24,5 @@ public class AmbassadorAmber extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		//for now
-		//String hint = "I hope they don't trace me to this murder!";
-		//return hint;
-		return getDialog();
 	}
 }

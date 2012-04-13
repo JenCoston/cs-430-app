@@ -7,9 +7,11 @@ public class PrimeMinisterPatrick extends Leader {
 	private static PrimeMinisterPatrick t;
 	
 	private PrimeMinisterPatrick() {
-		super("Prime Minister Patrick", Peoria.getPeoria());
-		setDescriptions("Peoria's esteemed leader");
-		setDialog("Pleased to meet you... any chance you are a detective?");
+		super("Prime Minister Patrick",
+				"Peoria's esteemed leader",
+				Peoria.getPeoria(),
+				"Pleased to meet you... any chance you are a detective?",
+				"I'll help if I can.");
 	}
 		
 	public static PrimeMinisterPatrick getPrimeMinisterPatrick() {
@@ -22,14 +24,6 @@ public class PrimeMinisterPatrick extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public String converse() {
-		// TODO Auto-generated method stub
-//		String hint = "Talk to the Queen, not me!";
-//		return hint;
-		return getDialog();
 	}
 
 }

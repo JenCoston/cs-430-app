@@ -25,7 +25,7 @@ public class DislexiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(DictatorDave.getDictatorDave().getDialog(), 3000, R.drawable.president2_head);
+    	showDialog(DictatorDave.getDictatorDave().getDescription(), 3000, R.drawable.president2_head);
     	Intent i = new Intent(getApplicationContext(), Dictator.class);
         startActivity(i);
     }

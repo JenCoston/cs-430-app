@@ -7,9 +7,11 @@ public class ChancellorChuck extends Leader {
 	private static ChancellorChuck t;
 		
 	private ChancellorChuck() {
-		super("Chancellor Chuck", Concordia.getConcordia());
-		setDescriptions("Condordia's beloved executive");
-		setDialog("What a dreadful deed that has been done!");
+		super("Chancellor Chuck",
+				"Condordia's beloved executive",
+				Concordia.getConcordia(),
+				"What a dreadful deed that has been done!",
+				"Its not my fault!");
 	}
 		
 	public static ChancellorChuck getChancellorChuck() {
@@ -22,14 +24,6 @@ public class ChancellorChuck extends Leader {
 	public void satisfy() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public String converse() {
-		//For now
-		//String hint = "Its not my fault!";
-		//return hint;
-		return getDialog();
 	}
 }
 

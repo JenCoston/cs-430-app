@@ -29,6 +29,8 @@ public abstract class NonPlayerActivity extends Activity {
     
     public void charTalk(View view){
     	showDialog(np.converse(), 3000);
+    	if (np.isInteresting())
+    		np.perform(getApplicationContext());//may need to get a return value, etc
     }
     
     public void giveItem(View view){   

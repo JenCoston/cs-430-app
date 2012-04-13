@@ -25,7 +25,7 @@ public class ConcordiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(ChancellorChuck.getChancellorChuck().getDialog(), 2000, R.drawable.pm3_head);
+    	showDialog(ChancellorChuck.getChancellorChuck().getDescription(), 2000, R.drawable.pm3_head);
     	Intent i = new Intent(getApplicationContext(), Chancellor.class);
         startActivity(i);
     }
