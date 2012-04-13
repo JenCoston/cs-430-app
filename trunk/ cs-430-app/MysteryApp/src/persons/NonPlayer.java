@@ -11,7 +11,8 @@ public abstract class NonPlayer extends Person {
 	private Location home;
 	protected ArrayList<String> dialog;
 	protected ArrayList<String> descs;
-	private int state;
+	private int state;//replace with stateQueue - when conversing, call dialog if uninter and call Qhead if interesting
+	private boolean interesting;
 	
 	public NonPlayer(String name, Location loc) {
 		super(name);
@@ -20,6 +21,7 @@ public abstract class NonPlayer extends Person {
 		home = loc;
 		state = 0;
 		setCurrentLocation(home);
+		interesting = false;
 	}
 	
 	public String getFullName() {
@@ -61,6 +63,10 @@ public abstract class NonPlayer extends Person {
 
 	public void nextState() {
 		state++;
+	}
+	
+	public boolean isInteresting() {
+		return interesting;
 	}
 	
 }

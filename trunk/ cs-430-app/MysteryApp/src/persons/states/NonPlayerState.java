@@ -1,17 +1,29 @@
 package persons.states;
 
-import java.util.ArrayList;
-
+import android.content.Context;
 import persons.NonPlayer;
 
-public class NonPlayerState {
-	private int state;
-	private ArrayList<String> dialog;
+public abstract class NonPlayerState {
+	private int id;
 	private NonPlayer np;
+	private String sayBefore;
 	
-	public NonPlayerState(NonPlayer np) {
+	public NonPlayerState(int id, NonPlayer np, String sayBefore) {
+		this.id = id;
 		this.np = np;
-		state = 0;
-		dialog = new ArrayList<String>();
+		this.sayBefore = sayBefore;
 	}
+	
+	public abstract boolean Execute(Context context);//call startActivityWithResult in here??
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getSayBefore() {
+		return sayBefore;
+	}
+	
+	//public void success(boolean){}
+	
 }
