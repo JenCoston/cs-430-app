@@ -11,7 +11,11 @@ public class SultanSam extends Leader {
 				"The Scimitar governing head",
 				Scimitar.getScimitar(),
 				"Greetings.  We could use some help sorting this out.",
-				"Ask Abu!");
+				"Ask Abu!",
+				"Sultans rule the Arab world, so why not the rest?",
+				"That little viper? Don't you know to kill a snake you have to chop off its head?",
+				"I have my ways to take care of trouble."
+		);
 	}
 		
 	public static SultanSam getSultanSam() {

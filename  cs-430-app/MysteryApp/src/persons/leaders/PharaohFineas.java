@@ -10,8 +10,11 @@ public class PharaohFineas extends Leader {
 		super("Pharaoh Fineas",
 				"The stoic Wallabian head of state",
 				Wallaby.getWallaby(),
-				"Hello.",
-				"It's too warm out here, can we please talk in my pyramid!");
+				"Hello. I hope you can assist us.",
+				"It's too warm out here, can we please talk in my pyramid!",
+				"I am just glad it wasn't me.",
+				"It is high time someone solves this case."
+		);
 	}
 		
 	public static PharaohFineas getPharaohFineas() {

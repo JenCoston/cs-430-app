@@ -12,7 +12,10 @@ public class DictatorDave extends Leader {
 				"The sole holder of Dislexian authority",
 				Dislexia.getDislexia(),
 				"Interesting situation here...",
-				"Did you ask some of the common folk!");
+				"Did you ask some of the common folk!",
+				"Me? Corrupt? Hardly!",
+				"People say there is nothing I won't do to gain power, but I have to draw the line somewhere."
+		);
 	}
 	
 	public static DictatorDave getDictatorDave() {
