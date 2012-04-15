@@ -11,7 +11,10 @@ public class ChancellorChuck extends Leader {
 				"Condordia's beloved executive",
 				Concordia.getConcordia(),
 				"What a dreadful deed that has been done!",
-				"Its not my fault!");
+				"Its not my fault!",
+				"Nothing like this could happen on my watch!",
+				"Only the strong survive, I suppose."
+		);
 	}
 		
 	public static ChancellorChuck getChancellorChuck() {

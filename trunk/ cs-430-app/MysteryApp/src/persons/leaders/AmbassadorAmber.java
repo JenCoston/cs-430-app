@@ -11,7 +11,10 @@ public class AmbassadorAmber extends Leader {
 				"A dignified Ambrosian leader",
 				Ambrosia.getAmbrosia(),
 				"Good day!  Quite a mess, this murder bit.",
-				"I hope they don't trace me to this murder!");
+				"I hope they don't try to pin me to this murder!",
+				"My land is far too safe for an incident like this to happen here.",
+				"Do you have any leads?"
+		);
 	}
 		
 	public static AmbassadorAmber getAmbassadorAmber() {

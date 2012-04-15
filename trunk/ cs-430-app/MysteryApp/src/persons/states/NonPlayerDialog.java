@@ -23,11 +23,11 @@ public class NonPlayerDialog implements DialogStrings {
 			currentOp++;
 		}
 		else if (currentOp == dialog.size()) {
-			result = NP_REFERRAL + Story.getStory().getInterestingNonPlayer().getName();
+			result = NP_REFERRAL + Story.getStory().getInterestingNonPlayer().getName() + ".";
 			currentOp++;
 		}
 		else {//(currentOp == (dialog.size() + 1)) 
-			result = LOC_REFERRAL + Story.getStory().getInterestingNonPlayer().getCurrentLocation().getName();
+			result = LOC_REFERRAL + Story.getStory().getInterestingNonPlayer().getCurrentLocation().getName() + ".";
 			currentOp = 0;
 		}
 		return result;

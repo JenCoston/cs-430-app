@@ -12,7 +12,9 @@ public class PresidentPaul extends Leader {
 				"The charismatic chief executive of Pacifica",
 				Pacifica.getPacifica(),
 				"Well hello there!  Now what do you think of all this?",
-				"Don't worry I will find out who the culprit is!");
+				"Don't worry, I will find out who the culprit is!",
+				"Well I certainly wasn't involved."
+		);
 	}
 	
 	public static PresidentPaul getPresidentPaul() {

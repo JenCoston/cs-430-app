@@ -11,7 +11,10 @@ public class QueenLizzy extends Leader {
 				"Her royal highness of Edenborough",
 				Edenborough.getEdenborough(),
 				"Oh dear what a shame this is!",
-				"Oh me Oh my!");
+				"Oh me, Oh my!",
+				"I simply cannot imagine this happening on our soil.",
+				"Please do your best to sort this out!"
+		);
 	}
 		
 	public static QueenLizzy getQueenLizzy() {
