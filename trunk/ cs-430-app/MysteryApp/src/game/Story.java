@@ -119,7 +119,7 @@ public class Story {
 			tempNPCs = generateNonPlayerFillSequence();
 			for (int i=0; i<tempNPCs.size(); i++)
 				npcs.add(tempNPCs.get(i));
-			if (npcs.get(interestingNPC-1).getName().equalsIgnoreCase(npcs.get(interestingNPC).getName())) {
+			if ((interestingNPC > 0) && (npcs.get(interestingNPC-1).getName().equalsIgnoreCase(npcs.get(interestingNPC).getName()))) {
 				n = npcs.remove(interestingNPC);
 				npcs.add(n);
 			}
