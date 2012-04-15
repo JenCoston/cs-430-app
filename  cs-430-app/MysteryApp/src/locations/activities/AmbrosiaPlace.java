@@ -1,9 +1,6 @@
 package locations.activities;
 
 import com.android.mysteryApp.R;
-import com.android.mysteryApp.R.drawable;
-import com.android.mysteryApp.R.layout;
-
 import persons.activities.Ambassador;
 import persons.leaders.AmbassadorAmber;
 import android.content.Intent;
@@ -16,11 +13,6 @@ public class AmbrosiaPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ambrosia);
-//        
-//        TextView t = new TextView(this); 
-//
-//        t = (TextView)findViewById(R.id.textView1); 
-//        t.setText(Ambrosia.getAmbrosia().getName());
     }
     
     
