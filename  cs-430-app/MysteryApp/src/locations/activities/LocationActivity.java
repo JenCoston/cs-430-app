@@ -1,5 +1,6 @@
 package locations.activities;
 
+import items.Item;
 import locations.Location;
 
 import com.android.mysteryApp.Load;
@@ -30,9 +31,12 @@ public abstract class LocationActivity extends Activity {
 	public abstract void explorePlace(View view);
 	    
 	public void gatherItem(View view){   
-		// Resume a Saved Game
-		Intent i = new Intent(getApplicationContext(), Load.class);
-		startActivity(i);
+		if (l.hasItems()) {
+			Item item = l.getOnlyItem();//a test function for demo purposes
+			showDialog("You found the "+item.getName()+" - "+item.getDescription()+".", 3000, item.getSmallImgId());
+		}
+		else
+			showDialog("There are no items here.", 3000, backImgId);
 	}
 
 	/*public void returnMM(View view){  

@@ -1,9 +1,8 @@
 package locations.activities;
 
-import com.android.mysteryApp.R;
-import com.android.mysteryApp.R.drawable;
-import com.android.mysteryApp.R.layout;
+import locations.Peoria;
 
+import com.android.mysteryApp.R;
 import persons.activities.PrimeMinister;
 import persons.leaders.PrimeMinisterPatrick;
 import android.content.Intent;
@@ -16,11 +15,7 @@ public class PeoriaPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.peoria);
-//        
-//        TextView t = new TextView(this); 
-//
-//        t = (TextView)findViewById(R.id.textView1); 
-//        t.setText(Ambrosia.getAmbrosia().getName());
+        setLocationFields(Peoria.getPeoria(), R.layout.peoria);
     }
     
     

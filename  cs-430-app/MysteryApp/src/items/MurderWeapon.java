@@ -4,7 +4,7 @@ public abstract class MurderWeapon extends Item {
 	private static int weapCount = 4;
 	
 	private MurderWeapon(){
-		super("", "");
+		super("", "", 0);
 	}
 	
 	public static int getWeaponCount() {

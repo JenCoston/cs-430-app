@@ -1,9 +1,8 @@
 package locations.activities;
 
-import com.android.mysteryApp.R;
-import com.android.mysteryApp.R.drawable;
-import com.android.mysteryApp.R.layout;
+import locations.Keyser;
 
+import com.android.mysteryApp.R;
 import persons.activities.King;
 import persons.leaders.KingCarl;
 import android.content.Intent;
@@ -17,11 +16,7 @@ public class KeyserPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.keyser);
-//        
-//        TextView t = new TextView(this); 
-//
-//        t = (TextView)findViewById(R.id.textView1); 
-//        t.setText(Ambrosia.getAmbrosia().getName());
+        setLocationFields(Keyser.getKeyser(), R.layout.keyser);
     }
     
     

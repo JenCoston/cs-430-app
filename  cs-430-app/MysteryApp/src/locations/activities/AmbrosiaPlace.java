@@ -1,5 +1,7 @@
 package locations.activities;
 
+import locations.Ambrosia;
+
 import com.android.mysteryApp.R;
 import persons.activities.Ambassador;
 import persons.leaders.AmbassadorAmber;
@@ -13,6 +15,7 @@ public class AmbrosiaPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ambrosia);
+        setLocationFields(Ambrosia.getAmbrosia(), R.layout.ambrosia);
     }
     
     
