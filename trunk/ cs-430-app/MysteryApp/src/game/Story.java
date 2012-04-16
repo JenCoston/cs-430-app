@@ -28,7 +28,7 @@ public class Story {
 		//fill npcs with states
 		NonPlayer interestingNP = getInterestingNonPlayer();
 		String wanted = murderWeapon.getName();
-		interestingNP.makeInteresting(new WantItemState(0, interestingNP, "I would really like the "+wanted, wanted));
+		interestingNP.makeInteresting(new WantItemState(interestingNP, wanted));
 	}
 	
 	public static Story getStory() {

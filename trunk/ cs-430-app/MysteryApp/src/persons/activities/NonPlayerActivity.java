@@ -1,7 +1,8 @@
 package persons.activities;
 
 import persons.NonPlayer;
-import com.android.mysteryApp.Load;
+import persons.Player;
+
 import com.android.mysteryApp.Map;
 import android.app.Activity;
 import android.content.Intent;
@@ -34,9 +35,15 @@ public abstract class NonPlayerActivity extends Activity {
     }
     
     public void giveItem(View view){   
-        // Resume a Saved Game
-    	Intent i = new Intent(getApplicationContext(), Load.class);
-        startActivity(i);
+        if (np.wantsItem()) {
+        	if (Player.getPlayer().hasItem(np.getWantedItem()))
+        		showDialog("I need an item and you have it- test dialog...", 3000);
+        	else
+        		showDialog("I need an item and you don't have it - test dialog...", 3000);
+        }
+        else {
+        	showDialog("I don't need any items right now.", 3000);
+        }
     }
     
     public void returnMap(View view){  

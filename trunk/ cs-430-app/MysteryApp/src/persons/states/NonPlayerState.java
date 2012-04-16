@@ -3,7 +3,7 @@ package persons.states;
 import android.content.Context;
 import persons.NonPlayer;
 
-public abstract class NonPlayerState {
+public abstract class NonPlayerState implements StateConstants {
 	private int id;
 	private NonPlayer np;//only needed for succes or failure??
 	private String sayBefore;
