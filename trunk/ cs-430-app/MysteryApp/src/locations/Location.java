@@ -61,8 +61,7 @@ public abstract class Location {
 	}
 	
 	public boolean hasItems() {
-		//return !items.isEmpty();
-		return true;
+		return !items.isEmpty();
 	}
 	
 	public String[] examine(){
@@ -106,6 +105,8 @@ public abstract class Location {
 	}
 
 	public Item getOnlyItem() {
+		for (Item i : items.values())
+			return i;
 		return new Fire();
 	}
 

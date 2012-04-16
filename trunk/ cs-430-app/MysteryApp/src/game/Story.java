@@ -35,21 +35,21 @@ public class Story {
 	}
 	
 	private void generateStory() {
-		/*ArrayList<Item> items;//
+		ArrayList<Item> items;//
 		ArrayList<Location> locs;
 		World w = World.getWorld();
-		Leader l;
-		Location destination;*/
+		//Leader l;
+		Location destination;
 		generateMurder();
-		//locs = generateLocationFillSequence();
-		/*items = generateItemFillSequence();
+		locs = generateLocationFillSequence();
+		items = generateItemFillSequence();
 		for (int i=0; i<locs.size(); i++) {
 			destination = locs.get(i);
 			destination.addItems(items.get(i));
-			l = w.getLeader(i);
-			if (l.getName().equalsIgnoreCase(victim.getName()) == false)
-				destination.addNonPlayers(l);
-		}*///Not used right now
+			//l = w.getLeader(i);
+			//if (l.getName().equalsIgnoreCase(victim.getName()) == false)
+			//	destination.addNonPlayers(l);
+		}//Not used right now
 	}
 	
 	private void generateMurder() {
