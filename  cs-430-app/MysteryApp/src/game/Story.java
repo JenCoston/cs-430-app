@@ -146,4 +146,19 @@ public class Story {
 		else
 			return false;
 	}
+	
+	public NonPlayer getNextUninterestingNonPlayer() {
+		ArrayList<NonPlayer> tempNPCs;
+		NonPlayer n;
+		if (interestingNPC+1 >= npcs.size()) {
+			tempNPCs = generateNonPlayerFillSequence();
+			for (int i=0; i<tempNPCs.size(); i++)
+				npcs.add(tempNPCs.get(i));
+			if ((interestingNPC > 0) && (npcs.get(interestingNPC-1).getName().equalsIgnoreCase(npcs.get(interestingNPC).getName()))) {
+				n = npcs.remove(interestingNPC);
+				npcs.add(n);
+			}
+		}
+		return npcs.get(interestingNPC+1);
+	}
 }
