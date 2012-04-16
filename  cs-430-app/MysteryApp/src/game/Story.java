@@ -10,6 +10,7 @@ import locations.Location;
 
 import persons.Leader;
 import persons.NonPlayer;
+import persons.states.WantItemState;
 
 public class Story {
 	private Leader killer;
@@ -25,7 +26,9 @@ public class Story {
 		interestingNPC = 0;
 		npcs = new ArrayList<NonPlayer>();
 		//fill npcs with states
-		//getInterestingNonPlayer().makeInteresting();
+		NonPlayer interestingNP = getInterestingNonPlayer();
+		String wanted = murderWeapon.getName();
+		interestingNP.makeInteresting(new WantItemState(0, interestingNP, "I would really like the "+wanted, wanted));
 	}
 	
 	public static Story getStory() {
