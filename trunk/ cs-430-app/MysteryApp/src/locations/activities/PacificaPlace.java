@@ -1,9 +1,8 @@
 package locations.activities;
 
-import com.android.mysteryApp.R;
-import com.android.mysteryApp.R.drawable;
-import com.android.mysteryApp.R.layout;
+import locations.Pacifica;
 
+import com.android.mysteryApp.R;
 import persons.activities.President;
 import persons.leaders.PresidentPaul;
 import android.content.Intent;
@@ -16,11 +15,7 @@ public class PacificaPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pacifica);
-//        
-//        TextView t = new TextView(this); 
-//
-//        t = (TextView)findViewById(R.id.textView1); 
-//        t.setText(Ambrosia.getAmbrosia().getName());
+        setLocationFields(Pacifica.getPacifica(), R.layout.pacifica);
     }
     
     

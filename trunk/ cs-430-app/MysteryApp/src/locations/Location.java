@@ -2,10 +2,9 @@ package locations;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Set;
-
 import persons.NonPlayer;
 
+import items.Fire;
 import items.Item;
 
 public abstract class Location {
@@ -61,6 +60,11 @@ public abstract class Location {
 			return null;
 	}
 	
+	public boolean hasItems() {
+		//return !items.isEmpty();
+		return true;
+	}
+	
 	public String[] examine(){
 		// TODO - set behavior of examine method
 		return null;
@@ -99,6 +103,10 @@ public abstract class Location {
 			System.out.printf("\t%s",i.getName());
 			System.out.println(" - "+i.getDescription());
 		}
+	}
+
+	public Item getOnlyItem() {
+		return new Fire();
 	}
 
 	/*public void makeInteresting() {

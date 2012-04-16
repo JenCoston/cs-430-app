@@ -1,9 +1,8 @@
 package locations.activities;
 
-import com.android.mysteryApp.R;
-import com.android.mysteryApp.R.drawable;
-import com.android.mysteryApp.R.layout;
+import locations.Edenborough;
 
+import com.android.mysteryApp.R;
 import persons.activities.Queen;
 import persons.leaders.QueenLizzy;
 import android.content.Intent;
@@ -16,11 +15,7 @@ public class EdenboroughPlace extends LocationActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edenborough);
-//        
-//        TextView t = new TextView(this); 
-//
-//        t = (TextView)findViewById(R.id.textView1); 
-//        t.setText(Ambrosia.getAmbrosia().getName());
+        setLocationFields(Edenborough.getEdenborough(), R.layout.edenborough);
     }
     
     
