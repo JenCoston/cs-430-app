@@ -23,10 +23,5 @@ public class ChancellorChuck extends Leader {
 		return t;
 	}
 
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-		
-	}
 }
 

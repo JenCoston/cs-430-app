@@ -22,11 +22,5 @@ public class PharaohFineas extends Leader {
 			t = new PharaohFineas();
 		return t;
 	}
-	
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-
-	}
 
 }

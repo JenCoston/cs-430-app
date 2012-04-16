@@ -35,11 +35,18 @@ public abstract class NonPlayerActivity extends Activity {
     }
     
     public void giveItem(View view){   
+    	Player p = Player.getPlayer();
+    	String wantedItem;
         if (np.wantsItem()) {
-        	if (Player.getPlayer().hasItem(np.getWantedItem()))
-        		showDialog("I need an item and you have it- test dialog...", 3000);
-        	else
-        		showDialog("I need an item and you don't have it - test dialog...", 3000);
+        	wantedItem = np.getWantedItem();
+        	if (p.hasItem(wantedItem)) {
+        		showDialog("Exactly what I need! Thank you.", 3000);
+        		p.removeItem(wantedItem);
+        		np.satisfy();
+        	}
+        	else {
+        		showDialog("You don't appear to have what I need.", 3000);
+        	}
         }
         else {
         	showDialog("I don't need any items right now.", 3000);

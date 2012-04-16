@@ -1,5 +1,6 @@
 package persons;
 
+import game.Story;
 import android.content.Context;
 
 import persons.states.NonPlayerDialog;
@@ -48,7 +49,10 @@ public abstract class NonPlayer extends Person {
 		}
 	}*/
 	
-	public abstract void satisfy();
+	public void satisfy() {
+		//give clue??
+		Story.getStory().advanceInterestingNonPlayer();
+	}
 	
 	public String converse() {
 		if (isInteresting() == false) {
@@ -92,5 +96,4 @@ public abstract class NonPlayer extends Person {
 	public String getWantedItem() {
 		return ((WantItemState)currentState).getWantedItem();
 	}
-	
 }

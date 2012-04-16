@@ -25,9 +25,4 @@ public class EmperorEddy extends Leader {
 		return t;
 	}
 
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-		
-	}
 }

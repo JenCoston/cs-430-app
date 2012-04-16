@@ -22,11 +22,5 @@ public class PrimeMinisterPatrick extends Leader {
 			t = new PrimeMinisterPatrick();
 		return t;
 	}
-	
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-
-	}
 
 }
