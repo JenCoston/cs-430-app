@@ -5,6 +5,7 @@ import android.content.Context;
 import persons.states.NonPlayerDialog;
 import persons.states.NonPlayerState;
 import persons.states.StateQueue;
+import persons.states.WantItemState;
 
 import locations.Location;
 
@@ -82,6 +83,14 @@ public abstract class NonPlayer extends Person {
 	
 	public void makeUninteresting() {
 		interesting = false;
+	}
+
+	public boolean wantsItem() {
+		return ((currentState != null) && (currentState instanceof WantItemState));
+	}
+	
+	public String getWantedItem() {
+		return ((WantItemState)currentState).getWantedItem();
 	}
 	
 }
