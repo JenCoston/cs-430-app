@@ -1,5 +1,6 @@
 package locations.activities;
 
+import persons.Player;
 import items.Item;
 import locations.Location;
 
@@ -34,6 +35,8 @@ public abstract class LocationActivity extends Activity {
 		if (l.hasItems()) {
 			Item item = l.getOnlyItem();//a test function for demo purposes
 			showDialog("You found the "+item.getName()+" - "+item.getDescription()+".", 3000, item.getSmallImgId());
+			Player.getPlayer().addItems(item);
+			l.removeItem(item.getName());
 		}
 		else
 			showDialog("There are no items here.", 3000, backImgId);
