@@ -24,10 +24,4 @@ public class SultanSam extends Leader {
 		return t;
 	}
 
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-
-	}
-
 }

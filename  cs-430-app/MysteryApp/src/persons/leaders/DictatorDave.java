@@ -23,10 +23,4 @@ public class DictatorDave extends Leader {
 			t = new DictatorDave();
 		return t;
 	}
-
-	@Override
-	public void satisfy() {
-		// TODO Auto-generated method stub
-		
-	}
 }
