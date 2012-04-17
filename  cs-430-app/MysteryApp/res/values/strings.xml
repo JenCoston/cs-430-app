@@ -44,5 +44,6 @@
     <string name="mapS">Map</string>
     <string name="look">Look</string>
     <string name="disclaimer">Disclaimers</string>
+    <string name="question">Clue</string>
 
 </resources>
