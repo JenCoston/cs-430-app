@@ -22,13 +22,13 @@ public class KeyserPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	if(Story.getStory().isVictim(KingCarl.getKingCarl())){
+    	if(!Story.getStory().isVictim(KingCarl.getKingCarl())){
     	showDialog(KingCarl.getKingCarl().getDescription(), 3000, R.drawable.king_head);
     	Intent i = new Intent(getApplicationContext(), King.class);
         startActivity(i);
     	}
         else{
-    		showDialog("God Save the King", 3000, R.drawable.keyser);
+    		showDialog("God Save the King", 3000, R.drawable.background2);
     	}
     }
     

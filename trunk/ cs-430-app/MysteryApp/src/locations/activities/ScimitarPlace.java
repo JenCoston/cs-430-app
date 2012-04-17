@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Scimitar;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class ScimitarPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(SultanSam.getSultanSam().getDescription(), 3000, R.drawable.sultan1_head);
-    	Intent i = new Intent(getApplicationContext(), Sultan.class);
-        startActivity(i);
+    	if(!Story.getStory().isVictim(SultanSam.getSultanSam())){
+	    	showDialog(SultanSam.getSultanSam().getDescription(), 3000, R.drawable.sultan1_head);
+	    	Intent i = new Intent(getApplicationContext(), Sultan.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("If only you would have a came a few weeks earlier!", 3000, R.drawable.china2);
+    	}
     }
     
 }

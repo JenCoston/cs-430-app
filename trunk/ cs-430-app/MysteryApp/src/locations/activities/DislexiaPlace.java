@@ -21,13 +21,13 @@ public class DislexiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	if(Story.getStory().isVictim(DictatorDave.getDictatorDave())){
+    	if(!Story.getStory().isVictim(DictatorDave.getDictatorDave())){
 	    	showDialog(DictatorDave.getDictatorDave().getDescription(), 3000, R.drawable.president2_head);
 	    	Intent i = new Intent(getApplicationContext(), Dictator.class);
 	        startActivity(i);
     	}
     	else{
-    		showDialog("It's a little late to talk to the Dictator now don't you think?", 3000, R.drawable.dislexia);
+    		showDialog("It's a little late to talk to the Dictator now don't you think?", 3000, R.drawable.city4);
     	}
     }
     
