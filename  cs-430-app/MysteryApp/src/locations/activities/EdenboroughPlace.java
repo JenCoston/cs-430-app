@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Edenborough;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class EdenboroughPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(QueenLizzy.getQueenLizzy().getDescription(), 3000, R.drawable.queen2_head);
-    	Intent i = new Intent(getApplicationContext(), Queen.class);
-        startActivity(i);
+    	if(Story.getStory().isVictim(QueenLizzy.getQueenLizzy())){
+	    	showDialog(QueenLizzy.getQueenLizzy().getDescription(), 3000, R.drawable.queen2_head);
+	    	Intent i = new Intent(getApplicationContext(), Queen.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("God Save The Queen!", 3000, R.drawable.edenborough);
+    	}
     }
     
 }

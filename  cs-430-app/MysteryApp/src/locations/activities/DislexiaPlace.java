@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Dislexia;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class DislexiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(DictatorDave.getDictatorDave().getDescription(), 3000, R.drawable.president2_head);
-    	Intent i = new Intent(getApplicationContext(), Dictator.class);
-        startActivity(i);
+    	if(Story.getStory().isVictim(DictatorDave.getDictatorDave())){
+	    	showDialog(DictatorDave.getDictatorDave().getDescription(), 3000, R.drawable.president2_head);
+	    	Intent i = new Intent(getApplicationContext(), Dictator.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("It's a little late to talk to the Dictator now don't you think?", 3000, R.drawable.dislexia);
+    	}
     }
     
 }
