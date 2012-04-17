@@ -4,7 +4,7 @@ public class Ambrosia extends Location {
 	private static Ambrosia t;
 	
 	private Ambrosia() {
-		super("Ambrosia", "A beautful region with a tropical climate");
+		super("Ambrosia", "A beautful region on a large lake");
 	}
 	
 	public static Ambrosia getAmbrosia() {

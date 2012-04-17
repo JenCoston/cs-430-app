@@ -96,4 +96,8 @@ public abstract class NonPlayer extends Person {
 	public String getWantedItem() {
 		return ((WantItemState)currentState).getWantedItem();
 	}
+
+	public NonPlayerState perform() {
+		return currentState.execute();///
+	}
 }

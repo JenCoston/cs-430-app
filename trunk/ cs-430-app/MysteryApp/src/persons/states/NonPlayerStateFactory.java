@@ -10,7 +10,7 @@ public class NonPlayerStateFactory {
 		rand = new Random();
 	}
 	
-	/*public NonPlayerState getNextState() {
-		
-	}*/
+	public NonPlayerState getNextState() {
+		return null;
+	}
 }

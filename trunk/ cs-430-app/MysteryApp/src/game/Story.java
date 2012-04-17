@@ -10,6 +10,7 @@ import locations.Location;
 
 import persons.Leader;
 import persons.NonPlayer;
+import persons.states.RiddleState;
 import persons.states.WantItemState;
 
 public class Story {
@@ -28,7 +29,8 @@ public class Story {
 		//fill npcs with states
 		NonPlayer interestingNP = getInterestingNonPlayer();
 		String wanted = murderWeapon.getName();
-		interestingNP.makeInteresting(new WantItemState(interestingNP, wanted));
+		//interestingNP.makeInteresting(new WantItemState(interestingNP, wanted));
+		interestingNP.makeInteresting(new RiddleState(interestingNP, "", ""));
 	}
 	
 	public static Story getStory() {

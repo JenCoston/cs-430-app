@@ -2,6 +2,8 @@ package persons.activities;
 
 import persons.NonPlayer;
 import persons.Player;
+import persons.states.NonPlayerState;
+import puzzles.RiddlePuzzle;
 
 import com.android.mysteryApp.Map;
 import android.app.Activity;
@@ -30,8 +32,14 @@ public abstract class NonPlayerActivity extends Activity {
     
     public void charTalk(View view){
     	showDialog(np.converse(), 3000);
-    	if (np.isInteresting())
-    		np.perform(getApplicationContext());//may need to get a return value, etc
+    	if (np.isInteresting()) {
+    		NonPlayerState ns = np.perform();
+    		//np.perform(getApplicationContext());//may need to get a return value, etc
+    		if (ns.getId() == 1) {
+    			Intent i = new Intent(getApplicationContext(), RiddlePuzzle.class);
+    			startActivity(i);
+    		}
+    	}
     }
     
     public void giveItem(View view){   
