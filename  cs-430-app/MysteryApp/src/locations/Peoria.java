@@ -4,7 +4,7 @@ public class Peoria extends Location {
 	private static Peoria t;
 	
 	private Peoria() {
-		super("Peoria", "A lively nation of forests and natural resources");
+		super("Peoria", "A lively nation with uptown feel.");
 	}
 	
 	public static Peoria getPeoria() {

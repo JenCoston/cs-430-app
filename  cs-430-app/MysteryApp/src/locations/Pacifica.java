@@ -4,7 +4,7 @@ public class Pacifica extends Location {
 	private static Pacifica t;
 	
 	private Pacifica() {
-		super("Pacifica", "A warm, sunny nation in the west");
+		super("Pacifica", "A dark and lonely nation in the west");
 	}
 	
 	public static Pacifica getPacifica() {
