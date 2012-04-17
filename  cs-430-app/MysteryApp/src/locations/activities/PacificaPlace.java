@@ -22,7 +22,7 @@ public class PacificaPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(PresidentPaul.getPresidentPaul())){
-	    	showDialog(PresidentPaul.getPresidentPaul().getDescription(), 3000, R.drawable.president1_head);
+	    	showDialog(PresidentPaul.getPresidentPaul().getName() + ": " + PresidentPaul.getPresidentPaul().getDescription(), 3000, R.drawable.president1_head);
 	    	Intent i = new Intent(getApplicationContext(), President.class);
 	        startActivity(i);
     	}

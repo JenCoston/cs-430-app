@@ -22,7 +22,7 @@ public class EdenboroughPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(QueenLizzy.getQueenLizzy())){
-	    	showDialog(QueenLizzy.getQueenLizzy().getDescription(), 3000, R.drawable.queen2_head);
+	    	showDialog(QueenLizzy.getQueenLizzy().getName() + ": " + QueenLizzy.getQueenLizzy().getDescription(), 3000, R.drawable.queen2_head);
 	    	Intent i = new Intent(getApplicationContext(), Queen.class);
 	        startActivity(i);
     	}

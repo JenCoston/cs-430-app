@@ -12,8 +12,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.android.mysteryApp.R;
-
 public class AmbrosiaPlace extends LocationActivity {
     /** Called when the activity is first created. */
     @Override
@@ -26,7 +24,7 @@ public class AmbrosiaPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(AmbassadorAmber.getAmbassadorAmber())){
-	    	showDialog(AmbassadorAmber.getAmbassadorAmber().getDescription(), 3000, R.drawable.ambassador_head);
+	    	showDialog(AmbassadorAmber.getAmbassadorAmber().getName() + ": " + AmbassadorAmber.getAmbassadorAmber().getDescription(), 3000, R.drawable.ambassador_head);
 	    	Intent i = new Intent(getApplicationContext(), Ambassador.class);
 	        startActivity(i);
     	}

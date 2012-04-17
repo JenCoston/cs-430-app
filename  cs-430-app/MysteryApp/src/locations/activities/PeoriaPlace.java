@@ -22,7 +22,7 @@ public class PeoriaPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(PrimeMinisterPatrick.getPrimeMinisterPatrick())){
-	    	showDialog(PrimeMinisterPatrick.getPrimeMinisterPatrick().getDescription(), 3000, R.drawable.pm2_head);
+	    	showDialog(PrimeMinisterPatrick.getPrimeMinisterPatrick().getName() + ": " + PrimeMinisterPatrick.getPrimeMinisterPatrick().getDescription(), 3000, R.drawable.pm2_head);
 	    	Intent i = new Intent(getApplicationContext(), PrimeMinister.class);
 	        startActivity(i);
     	}

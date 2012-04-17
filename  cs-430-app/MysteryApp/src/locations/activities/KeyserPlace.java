@@ -23,7 +23,7 @@ public class KeyserPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(KingCarl.getKingCarl())){
-    	showDialog(KingCarl.getKingCarl().getDescription(), 3000, R.drawable.king_head);
+    	showDialog(KingCarl.getKingCarl().getName() + ": " + KingCarl.getKingCarl().getDescription(), 3000, R.drawable.king_head);
     	Intent i = new Intent(getApplicationContext(), King.class);
         startActivity(i);
     	}

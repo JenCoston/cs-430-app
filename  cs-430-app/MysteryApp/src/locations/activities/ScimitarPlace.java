@@ -22,7 +22,7 @@ public class ScimitarPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(SultanSam.getSultanSam())){
-	    	showDialog(SultanSam.getSultanSam().getDescription(), 3000, R.drawable.sultan1_head);
+	    	showDialog(SultanSam.getSultanSam().getName() + ": " + SultanSam.getSultanSam().getDescription(), 3000, R.drawable.sultan1_head);
 	    	Intent i = new Intent(getApplicationContext(), Sultan.class);
 	        startActivity(i);
     	}
