@@ -164,6 +164,10 @@ public class Story {
 			return false;
 	}
 	
+	public Leader getVictim(){
+		return victim;
+	}
+	
 	public NonPlayer getNextUninterestingNonPlayer() {
 		ArrayList<NonPlayer> tempNPCs;
 		NonPlayer n;
