@@ -1,5 +1,7 @@
 package puzzles;
 
+import game.Story;
+
 import com.android.mysteryApp.Map;
 import com.android.mysteryApp.R;
 
@@ -28,6 +30,7 @@ public class PuzzleActivity extends Activity{
         String reponse = plain_edit_text.getText().toString();
         if(Riddles.getRiddles().correct(reponse, id)){
         	showDialog("Congratulations! This time!", 3000, R.drawable.bomb_sm);
+        	Story.getStory().advanceInterestingNonPlayer();
         }
         else{
         	showDialog("Too bad ", 3000, R.drawable.bomb_sm);
