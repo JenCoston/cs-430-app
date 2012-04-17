@@ -10,6 +10,8 @@ import locations.Location;
 
 import persons.Leader;
 import persons.NonPlayer;
+import persons.states.NonPlayerState;
+import persons.states.NonPlayerStateFactory;
 import persons.states.RiddleState;
 import persons.states.WantItemState;
 
@@ -21,6 +23,7 @@ public class Story {
 	private static Story s;
 	private ArrayList<NonPlayer> npcs;
 	private int interestingNPC;
+	private NonPlayerStateFactory factory;
 	
 	private Story() {
 		generateStory();
@@ -30,7 +33,9 @@ public class Story {
 		NonPlayer interestingNP = getInterestingNonPlayer();
 		String wanted = murderWeapon.getName();
 		//interestingNP.makeInteresting(new WantItemState(interestingNP, wanted));
-		interestingNP.makeInteresting(new RiddleState(interestingNP, "", ""));
+		//interestingNP.makeInteresting(new RiddleState(interestingNP, "", ""));
+		factory = new NonPlayerStateFactory();
+		interestingNP.makeInteresting(factory.getNextState(interestingNP));
 	}
 	
 	public static Story getStory() {
@@ -132,7 +137,7 @@ public class Story {
 		return npcs.get(interestingNPC);
 	}
 	
-	public void advanceInterestingNonPlayer() {
+	/*public void advanceInterestingNonPlayer() {
 		NonPlayer n = getInterestingNonPlayer();
 		while (n.isInteresting()) {
 			n.makeUninteresting();
@@ -140,6 +145,16 @@ public class Story {
 			n = getInterestingNonPlayer();
 		}
 		n.makeInteresting();
+	}*/
+	
+	public void advanceInterestingNonPlayer() {
+		NonPlayer n = getInterestingNonPlayer();
+		while (n.isInteresting()) {
+			n.makeUninteresting();
+			interestingNPC++;
+			n = getInterestingNonPlayer();
+		}
+		n.makeInteresting(factory.getNextState(n));
 	}
 	
 	public boolean isVictim(NonPlayer np) {

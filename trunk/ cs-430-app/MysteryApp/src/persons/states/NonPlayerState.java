@@ -23,7 +23,7 @@ public abstract class NonPlayerState extends Activity implements StateConstants 
 	public abstract boolean execute(Context context);//call startActivityWithResult in here??
 	
 	public NonPlayerState execute() {
-		return new RiddleState(np, "", "");
+		return this;
 	}
 	
 	public int getId() {
