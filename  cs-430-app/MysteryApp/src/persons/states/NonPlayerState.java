@@ -1,9 +1,11 @@
 package persons.states;
 
+import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
 import persons.NonPlayer;
 
-public abstract class NonPlayerState implements StateConstants {
+public abstract class NonPlayerState extends Activity implements StateConstants {
 	private int id;
 	private NonPlayer np;//only needed for succes or failure??
 	private String sayBefore;
@@ -14,7 +16,15 @@ public abstract class NonPlayerState implements StateConstants {
 		this.sayBefore = sayBefore;
 	}
 	
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+	
 	public abstract boolean execute(Context context);//call startActivityWithResult in here??
+	
+	public NonPlayerState execute() {
+		return new RiddleState(np, "", "");
+	}
 	
 	public int getId() {
 		return id;
