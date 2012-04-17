@@ -12,9 +12,12 @@ public class Disclaimer extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.disclaimer);
-      String dis = "The Images found throughout this game were collected from ClipArt. \n " +
-      		"The mini-games were collected from various open source sites. \n" +
-      		"Fill this in more completely later";
+      String dis = "All images found in this game are from clipart.com school edition." + 
+        "These royalty-free images were made available through a subscription. \n " +
+    		  "Riddles are from: \n" +
+      		" Lupton, Hugh, and Sophie Fatus. Riddle Me This!:" + 
+      		"Riddles and Stories to Challenge Your Mind. Cambridge, MA:" + 
+      		"Barefoot, 2003. Print.";
       TextView t = new TextView(this); 
 
       t = (TextView)findViewById(R.id.textView1); 

@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Concordia;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class ConcordiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(ChancellorChuck.getChancellorChuck().getDescription(), 2000, R.drawable.pm3_head);
-    	Intent i = new Intent(getApplicationContext(), Chancellor.class);
-        startActivity(i);
+    	if(Story.getStory().isVictim(ChancellorChuck.getChancellorChuck())){
+	    	showDialog(ChancellorChuck.getChancellorChuck().getDescription(), 2000, R.drawable.pm3_head);
+	    	Intent i = new Intent(getApplicationContext(), Chancellor.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("Isn't it kind of rude to come to Concordia at a time like this!", 3000, R.drawable.concordia);
+    	}
     }
     
 }

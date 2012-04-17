@@ -1,5 +1,6 @@
 package locations.activities;
 
+import puzzles.RiddlePuzzle;
 import persons.Player;
 import items.Item;
 import locations.Location;
@@ -32,6 +33,7 @@ public abstract class LocationActivity extends Activity {
 	public abstract void explorePlace(View view);
 	    
 	public void gatherItem(View view){   
+		// Resume a Saved Game
 		if (l.hasItems()) {
 			Item item = l.getOnlyItem();//a test function for demo purposes
 			showDialog("You found the "+item.getName()+" - "+item.getDescription()+".", 3000, item.getSmallImgId());
@@ -40,6 +42,11 @@ public abstract class LocationActivity extends Activity {
 		}
 		else
 			showDialog("There are no items here.", 3000, backImgId);
+	}
+	
+	public void playGame(View view){
+		Intent i = new Intent(getApplicationContext(), RiddlePuzzle.class);
+		startActivity(i);
 	}
 
 	/*public void returnMM(View view){  

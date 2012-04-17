@@ -50,6 +50,8 @@
         <activity android:name="locations.activities.ScimitarPlace"></activity>   
         <activity android:name="persons.activities.Sultan"></activity>     
         <activity android:name="locations.activities.WallabyPlace"></activity>
+        <activity android:name="puzzles.PicturePuzzle"></activity>
+        <activity android:name="puzzles.RiddlePuzzle"></activity>
     </application>
 
 </manifest>
