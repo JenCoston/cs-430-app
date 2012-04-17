@@ -43,82 +43,62 @@ public class Map extends Activity {
     }
     
     public void startBackground1(View view){
-    	showDialog(Concordia.getConcordia().getDescription(), 2000);
+    	showDialog(Concordia.getConcordia().getName() + ": " + Concordia.getConcordia().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), ConcordiaPlace.class);
-//        String value = "background1";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startBackground2(View view){
-    	showDialog(Keyser.getKeyser().getDescription(), 2000);
+    	showDialog(Keyser.getKeyser().getName() + ": " + Keyser.getKeyser().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), KeyserPlace.class);
-//    	String value = "background2";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startBackground3(View view){
-    	showDialog(Ambrosia.getAmbrosia().getDescription(), 2000);
+    	showDialog(Ambrosia.getAmbrosia().getName() + ": " + Ambrosia.getAmbrosia().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), AmbrosiaPlace.class);
-    	//String value = "background3";
-		//i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startChina2(View view){
-    	showDialog(Scimitar.getScimitar().getDescription(), 2000);
+    	showDialog(Scimitar.getScimitar().getName() + ": " + Scimitar.getScimitar().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), ScimitarPlace.class);
-//    	String value = "china2";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startCity1(View view){
-    	showDialog(Pacifica.getPacifica().getDescription(), 2000);
+    	showDialog(Pacifica.getPacifica().getName() + ": " + Pacifica.getPacifica().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), PacificaPlace.class);
-//    	String value = "city1";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startEgypt(View view){
-    	showDialog(Wallaby.getWallaby().getDescription(), 2000);
+    	showDialog(Wallaby.getWallaby().getName() + ": " +Wallaby.getWallaby().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), WallabyPlace.class);
-//    	String value = "egypt";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startRussia1(View view){
-    	showDialog(Orient.getOrient().getDescription(), 2000);
+    	showDialog(Orient.getOrient().getName() + ": " + Orient.getOrient().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), OrientPlace.class);
-//    	String value = "russia1";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startRussia2(View view){
-    	showDialog(Edenborough.getEdenborough().getDescription(), 2000);
+    	showDialog(Edenborough.getEdenborough().getName() + ": " + Edenborough.getEdenborough().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), EdenboroughPlace.class);
-//    	String value = "russia2";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startCity4(View view){
-    	showDialog(Dislexia.getDislexia().getDescription(), 2000);
+    	showDialog(Dislexia.getDislexia().getName() + ": " + Dislexia.getDislexia().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), DislexiaPlace.class);
-//    	String value = "russia2";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     
     public void startCity2(View view){
-    	showDialog(Peoria.getPeoria().getDescription(), 2000);
+    	showDialog(Peoria.getPeoria().getName() + ": " + Peoria.getPeoria().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), PeoriaPlace.class);
-//    	String value = "russia2";
-//		i.putExtra("background", value);
     	startActivity(i);
     }
     

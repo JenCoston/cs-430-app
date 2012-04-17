@@ -22,7 +22,7 @@ public class ConcordiaPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(ChancellorChuck.getChancellorChuck())){
-	    	showDialog(ChancellorChuck.getChancellorChuck().getDescription(), 2000, R.drawable.pm3_head);
+	    	showDialog(ChancellorChuck.getChancellorChuck().getName() + ": " + ChancellorChuck.getChancellorChuck().getDescription(), 2000, R.drawable.pm3_head);
 	    	Intent i = new Intent(getApplicationContext(), Chancellor.class);
 	        startActivity(i);
     	}

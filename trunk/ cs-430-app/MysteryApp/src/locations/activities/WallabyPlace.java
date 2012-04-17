@@ -22,7 +22,7 @@ public class WallabyPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(PharaohFineas.getPharaohFineas())){
-	    	showDialog(PharaohFineas.getPharaohFineas().getDescription(), 3000, R.drawable.pharaoh_head);
+	    	showDialog(PharaohFineas.getPharaohFineas().getName() + ": " + PharaohFineas.getPharaohFineas().getDescription(), 3000, R.drawable.pharaoh_head);
 	    	Intent i = new Intent(getApplicationContext(), Pharaoh.class);
 	        startActivity(i);
     	}

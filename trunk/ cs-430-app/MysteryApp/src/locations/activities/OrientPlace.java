@@ -22,7 +22,7 @@ public class OrientPlace extends LocationActivity {
     
     public void explorePlace(View view){
     	if(!Story.getStory().isVictim(EmperorEddy.getEmperorEddy())){
-	    	showDialog(EmperorEddy.getEmperorEddy().getDescription(), 3000, R.drawable.emperor3_head);
+	    	showDialog(EmperorEddy.getEmperorEddy().getName() + ": " + EmperorEddy.getEmperorEddy().getDescription(), 3000, R.drawable.emperor3_head);
 	    	Intent i = new Intent(getApplicationContext(), Emperor.class);
 	        startActivity(i);
     	}
