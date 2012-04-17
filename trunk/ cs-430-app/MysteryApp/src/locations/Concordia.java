@@ -4,7 +4,7 @@ public class Concordia extends Location {
 	private static Concordia t;
 	
 	private Concordia() {
-		super("Concordia", "A county of flat plains");
+		super("Concordia", "A lush forest that surrounds a pristine palace courtyard.");
 	}
 	
 	public static Concordia getConcordia() {

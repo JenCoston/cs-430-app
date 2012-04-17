@@ -4,7 +4,7 @@ public class Edenborough extends Location {
 	private static Edenborough t;
 	
 	private Edenborough() {
-		super("Edenborough", "A proud land with a rainy climate");
+		super("Edenborough", "A proud land with a magnificant body of water.");
 	}
 	
 	public static Edenborough getEdenborough() {

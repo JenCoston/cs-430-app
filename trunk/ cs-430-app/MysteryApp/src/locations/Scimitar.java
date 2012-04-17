@@ -4,7 +4,7 @@ public class Scimitar extends Location {
 	private static Scimitar t;
 	
 	private Scimitar() {
-		super("Scimitar", "A vast desert dotted with oases");
+		super("Scimitar", "A vast nation surrounded by a guardian wall");
 	}
 	
 	public static Scimitar getScimitar() {

@@ -4,7 +4,7 @@ public class Orient extends Location {
 	private static Orient t;
 	
 	private Orient() {
-		super("Orient", "A storied land in the far east");
+		super("Orient", "A storied land with a gated kingdom.");
 	}
 	
 	public static Orient getOrient() {

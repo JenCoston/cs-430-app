@@ -5,7 +5,7 @@ public class Wallaby extends Location {
 	private static Wallaby t;
 	
 	private Wallaby() {
-		super("Wallaby", "A sunny state of beaches ");
+		super("Wallaby", "A warm state with pyramids lining the outskirts ");
 	}
 	
 	public static Wallaby getWallaby() {
