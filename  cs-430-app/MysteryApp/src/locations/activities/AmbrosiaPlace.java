@@ -25,13 +25,13 @@ public class AmbrosiaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	if(Story.getStory().isVictim(AmbassadorAmber.getAmbassadorAmber())){
+    	if(!Story.getStory().isVictim(AmbassadorAmber.getAmbassadorAmber())){
 	    	showDialog(AmbassadorAmber.getAmbassadorAmber().getDescription(), 3000, R.drawable.ambassador_head);
 	    	Intent i = new Intent(getApplicationContext(), Ambassador.class);
 	        startActivity(i);
     	}
     	else{
-    		showDialog("Everyone in Ambrosia is too busy mourning to talk!", 3000, R.drawable.ambrosia);
+    		showDialog("Everyone in Ambrosia is too busy mourning to talk!", 3000, R.drawable.background3);
     	}
     }
     

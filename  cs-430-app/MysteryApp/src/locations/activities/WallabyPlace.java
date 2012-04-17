@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Wallaby;
 
 import com.android.mysteryApp.R;
@@ -20,8 +21,13 @@ public class WallabyPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(PharaohFineas.getPharaohFineas().getDescription(), 3000, R.drawable.pharaoh_head);
-    	Intent i = new Intent(getApplicationContext(), Pharaoh.class);
-        startActivity(i);
+    	if(!Story.getStory().isVictim(PharaohFineas.getPharaohFineas())){
+	    	showDialog(PharaohFineas.getPharaohFineas().getDescription(), 3000, R.drawable.pharaoh_head);
+	    	Intent i = new Intent(getApplicationContext(), Pharaoh.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("Come back after we have sorted out this mess!", 3000, R.drawable.egypt);
+    	}
     }
 }

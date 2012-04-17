@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Peoria;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class PeoriaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(PrimeMinisterPatrick.getPrimeMinisterPatrick().getDescription(), 3000, R.drawable.pm2_head);
-    	Intent i = new Intent(getApplicationContext(), PrimeMinister.class);
-        startActivity(i);
+    	if(!Story.getStory().isVictim(PrimeMinisterPatrick.getPrimeMinisterPatrick())){
+	    	showDialog(PrimeMinisterPatrick.getPrimeMinisterPatrick().getDescription(), 3000, R.drawable.pm2_head);
+	    	Intent i = new Intent(getApplicationContext(), PrimeMinister.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog(PrimeMinisterPatrick.getPrimeMinisterPatrick().getDescription(), 3000, R.drawable.city2);
+    	}
     }
     
 }

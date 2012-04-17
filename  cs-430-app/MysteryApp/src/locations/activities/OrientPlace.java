@@ -21,13 +21,13 @@ public class OrientPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	if(Story.getStory().isVictim(EmperorEddy.getEmperorEddy())){
+    	if(!Story.getStory().isVictim(EmperorEddy.getEmperorEddy())){
 	    	showDialog(EmperorEddy.getEmperorEddy().getDescription(), 3000, R.drawable.emperor3_head);
 	    	Intent i = new Intent(getApplicationContext(), Emperor.class);
 	        startActivity(i);
     	}
     	else{
-    		showDialog("Now what possibly do you think you could learn from Orient?", 3000, R.drawable.orient);
+    		showDialog("Now what possibly do you think you could learn from Orient?", 3000, R.drawable.russia1);
     	}
     }
     

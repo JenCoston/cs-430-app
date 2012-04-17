@@ -1,5 +1,6 @@
 package locations.activities;
 
+import game.Story;
 import locations.Pacifica;
 
 import com.android.mysteryApp.R;
@@ -20,9 +21,14 @@ public class PacificaPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	showDialog(PresidentPaul.getPresidentPaul().getDescription(), 3000, R.drawable.president1_head);
-    	Intent i = new Intent(getApplicationContext(), President.class);
-        startActivity(i);
+    	if(!Story.getStory().isVictim(PresidentPaul.getPresidentPaul())){
+	    	showDialog(PresidentPaul.getPresidentPaul().getDescription(), 3000, R.drawable.president1_head);
+	    	Intent i = new Intent(getApplicationContext(), President.class);
+	        startActivity(i);
+    	}
+    	else{
+    		showDialog("Please come back at a better time!", 3000, R.drawable.city1);
+    	}
     }
     
 }

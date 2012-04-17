@@ -21,13 +21,13 @@ public class EdenboroughPlace extends LocationActivity {
     
     
     public void explorePlace(View view){
-    	if(Story.getStory().isVictim(QueenLizzy.getQueenLizzy())){
+    	if(!Story.getStory().isVictim(QueenLizzy.getQueenLizzy())){
 	    	showDialog(QueenLizzy.getQueenLizzy().getDescription(), 3000, R.drawable.queen2_head);
 	    	Intent i = new Intent(getApplicationContext(), Queen.class);
 	        startActivity(i);
     	}
     	else{
-    		showDialog("God Save The Queen!", 3000, R.drawable.edenborough);
+    		showDialog("God Save The Queen!", 3000, R.drawable.russia2);
     	}
     }
     
