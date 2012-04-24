@@ -18,4 +18,8 @@ public class Load extends Activity {
     	Intent i = new Intent(getApplicationContext(), NewGame.class);
         startActivity(i);
     }
+    
+    public void save1(View view) {
+    	
+    }
 }

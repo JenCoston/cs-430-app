@@ -51,6 +51,7 @@ public abstract class NonPlayer extends Person {
 	
 	public void satisfy() {
 		//give clue??
+		//currentState = null;
 		Story.getStory().advanceInterestingNonPlayer();
 	}
 	
