@@ -1,14 +1,11 @@
 package persons;
 
 import game.Story;
-import android.content.Context;
-
+import locations.Location;
 import persons.states.NonPlayerDialog;
 import persons.states.NonPlayerState;
-import persons.states.StateQueue;
 import persons.states.WantItemState;
-
-import locations.Location;
+import android.content.Context;
 
 
 public abstract class NonPlayer extends Person {

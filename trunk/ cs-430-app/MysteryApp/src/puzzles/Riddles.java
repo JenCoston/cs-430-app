@@ -28,6 +28,7 @@ public class Riddles {
 		}
 		else{
 			i = 0;
+			Collections.shuffle(result);
 			r = result.get(i);
 		}
 		return r;
