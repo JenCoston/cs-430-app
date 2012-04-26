@@ -1,5 +1,7 @@
 package locations;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import persons.NonPlayer;
@@ -13,6 +15,8 @@ public abstract class Location {
 	private Hashtable<String, Item> items;
 	private String desc;
 	private int state;
+	private ArrayList<String> clueList;
+	private static int i = 0;
 	
 	public Location(String n, String description) {
 		name = n;
@@ -109,6 +113,30 @@ public abstract class Location {
 			return i;
 		return new Fire();
 	}
+	
+	public abstract String clues(int n);
+	
+    public void clueList(){
+    	int numRiddles = 10;
+		for (int i=0; i< numRiddles; i++) {
+			clueList.add(clues(i));
+		}
+		Collections.shuffle(clueList);
+    }
+    
+    public String getClue(){
+    	String c;
+    	if(i <= 9){
+			c = clueList.get(i);
+			i++;
+		}
+		else{
+			i = 0;
+			Collections.shuffle(clueList);
+			c = clueList.get(i);
+		}
+    	return c;
+    }
 
 	/*public void makeInteresting() {
 		Enumeration<String> nE = npcs.keys();

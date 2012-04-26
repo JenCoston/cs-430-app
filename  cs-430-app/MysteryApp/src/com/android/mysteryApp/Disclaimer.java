@@ -19,7 +19,6 @@ public class Disclaimer extends Activity {
       		"Riddles and Stories to Challenge Your Mind. Cambridge, MA:" + 
       		"Barefoot, 2003. Print.";
       TextView t = new TextView(this); 
-
       t = (TextView)findViewById(R.id.textView1); 
       t.setText(dis);
     }

@@ -1,5 +1,6 @@
 package persons.leaders;
 
+import clues.Clue;
 import persons.Leader;
 import locations.Dislexia;
 
@@ -22,5 +23,33 @@ public class DictatorDave extends Leader {
 		if (t==null)
 			t = new DictatorDave();
 		return t;
+	}
+
+	@Override
+	public String clues(int n) {
+		String clue = null;
+    	switch(n){
+    	case 1: clue = "The land that the suspect hails from seems to be very stark.";
+    			break;
+    	case 2: clue = "A tie tack was found at the scene of the crime.";
+    			break;
+    	case 3: clue = "A sketch of the suspect reveals a very long chin.";
+    			break;
+    	case 4: clue = "Wide eyes sparkled during the night of the crime.";
+    			break;
+    	case 5: clue = "The buzz on the crooks kingdom is dark and dreary.";
+    			break;
+    	case 6: clue = "The villain is probably dominant, tough, and self asserted.";
+    			break;
+    	case 7: clue = "The scoundrel will most likely assert that he was not involved.";
+    			break;
+    	case 8: clue = "The empire where the culprit comes from is said to be very urban.";
+    			break;
+    	case 9: clue = "I bet the crook has an incriminating shocked look about them.";
+    			break;
+    	case 10: clue = "The foot prints are said to be rather large surrounding the crime scene.";
+    			break;
+    	}
+		return clue;
 	}
 }
