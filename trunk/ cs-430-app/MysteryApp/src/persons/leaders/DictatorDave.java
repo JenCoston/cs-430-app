@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Dictator;
 import locations.Dislexia;
 
 
@@ -12,6 +12,7 @@ public class DictatorDave extends Leader {
 		super("Dictator Dave",
 				"The sole holder of Dislexian authority",
 				Dislexia.getDislexia(),
+				Dictator.class,
 				"Interesting situation here...",
 				"Did you ask some of the common folk!",
 				"Me? Corrupt? Hardly!",

@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.MachakwActivity;
 
 public class Machakw extends Citizen {
 	private static Machakw t;
@@ -10,6 +11,7 @@ public class Machakw extends Citizen {
 		super("Machakw",
 				"Machakw is a well know tracker. His skills are known throughout the village. If you need to find something he is the man to see.",
 				Ambrosia.getAmbrosia(),
+				MachakwActivity.class,
 				""
 		);
 	}

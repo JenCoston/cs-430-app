@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.King;
 import locations.Keyser;
 
 
@@ -12,6 +12,7 @@ public class KingCarl extends Leader {
 		super("King Carl",
 				"The enlightened despot of Keyser",
 				Keyser.getKeyser(),
+				King.class,
 				"Greetings.  Do you know anyone good at solving mysteries?",
 				"To the charriot!",
 			    "My chief of staff has assured me that everything is in order. There is nothing for you to see here.",
@@ -55,5 +56,4 @@ public class KingCarl extends Leader {
     	}
 		return clue;
 	}
-
 }

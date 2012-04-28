@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.President;
 import locations.Pacifica;
 
 
@@ -12,6 +12,7 @@ public class PresidentPaul extends Leader {
 		super("President Paul",
 				"The charismatic chief executive of Pacifica",
 				Pacifica.getPacifica(),
+				President.class,
 				"Well hello there!  Now what do you think of all this?",
 				"Don't worry, I will find out who the culprit is!",
 				"Well I certainly wasn't involved."

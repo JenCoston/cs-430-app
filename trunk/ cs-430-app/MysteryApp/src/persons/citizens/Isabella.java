@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.IsabellaActivity;
 
 public class Isabella extends Citizen {
 	private static Isabella t;
@@ -10,6 +11,7 @@ public class Isabella extends Citizen {
 		super("Isabella",
 				"Isabella is very devout. As she goes about her day, she often finds things to talk to God about. Often she is struck by the need to kneel and thank him.",
 				Ambrosia.getAmbrosia(),
+				IsabellaActivity.class,
 				""
 		);
 	}

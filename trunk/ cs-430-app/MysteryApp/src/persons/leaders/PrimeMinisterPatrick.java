@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.PrimeMinister;
 import locations.Peoria;
 
 public class PrimeMinisterPatrick extends Leader {
@@ -11,6 +11,7 @@ public class PrimeMinisterPatrick extends Leader {
 		super("Prime Minister Patrick",
 				"Peoria's esteemed leader",
 				Peoria.getPeoria(),
+				PrimeMinister.class,
 				"Pleased to meet you... any chance you are a detective?",
 				"I'll help if I can.",
 				"It is frightening that something like this could happen in this day and age!",

@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.AdoetteActivity;
 
 public class Adoette extends Citizen {
 	private static Adoette t;
@@ -10,6 +11,7 @@ public class Adoette extends Citizen {
 		super("Adoette",
 				"Adoette is the daughter of the village wise-man. She is training with her grandmother to learn the skills so that one day she can provide medicine to the village.",
 				Ambrosia.getAmbrosia(),
+				AdoetteActivity.class,
 				""
 		);
 	}

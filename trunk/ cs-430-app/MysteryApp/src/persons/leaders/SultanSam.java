@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Sultan;
 import locations.Scimitar;
 
 public class SultanSam extends Leader {
@@ -11,6 +11,7 @@ public class SultanSam extends Leader {
 		super("Sultan Sam",
 				"The Scimitar governing head",
 				Scimitar.getScimitar(),
+				Sultan.class,
 				"Greetings.  We could use some help sorting this out.",
 				"Ask Abu!",
 				"Sultans rule the Arab world, so why not the rest?",
