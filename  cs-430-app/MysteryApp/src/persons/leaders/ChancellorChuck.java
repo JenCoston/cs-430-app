@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Chancellor;
 import locations.Concordia;
 
 public class ChancellorChuck extends Leader {
@@ -11,6 +11,7 @@ public class ChancellorChuck extends Leader {
 		super("Chancellor Chuck",
 				"Condordia's beloved executive",
 				Concordia.getConcordia(),
+				Chancellor.class,
 				"What a dreadful deed that has been done!",
 				"Its not my fault!",
 				"Nothing like this could happen on my watch!",
@@ -51,6 +52,5 @@ public class ChancellorChuck extends Leader {
     	}
 		return clue;
 	}
-
 }
 

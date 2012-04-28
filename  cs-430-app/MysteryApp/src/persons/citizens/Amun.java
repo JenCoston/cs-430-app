@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.AmunActivity;
 
 public class Amun extends Citizen {
 	private static Amun t;
@@ -10,6 +11,7 @@ public class Amun extends Citizen {
 		super("Amun",
 				"Amun wants to be an artist. Daily he travels around the city looking for inspiration for his statues and paintings.",
 				Ambrosia.getAmbrosia(),
+				AmunActivity.class,
 				""
 		);
 	}

@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.CalgaryActivity;
 
 public class Calgary extends Citizen {
 	private static Calgary t;
@@ -10,6 +11,7 @@ public class Calgary extends Citizen {
 		super("Calgary",
 				"Calgary has long battled the weather. As a local shopkeeper he is saving so that he can move to a warmer country.",
 				Ambrosia.getAmbrosia(),
+				CalgaryActivity.class,
 				""
 		);
 	}

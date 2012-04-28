@@ -1,13 +1,17 @@
 package locations.activities;
 
 import puzzles.RiddlePuzzle;
+import persons.NonPlayer;
 import persons.Player;
+import persons.citizens.Aadrika;
 import items.Item;
 import locations.Location;
 
 import com.android.mysteryApp.Load;
 import com.android.mysteryApp.Map;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -42,6 +46,33 @@ public abstract class LocationActivity extends Activity {
 		}
 		else
 			showDialog("There are no items here.", 3000, backImgId);
+	}
+	
+	public void exploreMulti(View view) {
+		//get character list in place
+		final NonPlayer[] npcs = l.getNonPlayers();
+		int len = npcs.length;
+		final CharSequence[] npcChoices = new CharSequence[len];
+		for (int i=0; i<len; i++)
+			npcChoices[i] = npcs[i].getName();
+		//show the new dialog type
+		if (len < 2) {
+			explorePlace(null);
+		}
+		else {
+        	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        	builder.setTitle("Speak to whom?");
+        	builder.setItems(npcChoices, new DialogInterface.OnClickListener() {
+        		public void onClick(DialogInterface dialog, int choice) {
+        			//Intent characterIntent = newCharacterIntentFactory(npcChoices[choice].toString());
+        			Intent characterIntent = npcs[choice].getIntent(getApplicationContext());
+        			startActivity(characterIntent);
+        			//Toast.makeText(getApplicationContext(), npcChoices[choice], Toast.LENGTH_LONG).show();
+        		}
+        	});
+        	AlertDialog alert = builder.create();
+        	alert.show();
+        }
 	}
 	
 	public void playGame(View view){

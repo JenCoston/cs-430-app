@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Ambassador;
 import locations.Ambrosia;
 
 public class AmbassadorAmber extends Leader {
@@ -11,6 +11,7 @@ public class AmbassadorAmber extends Leader {
 		super("Ambassador Amber", 
 				"A dignified Ambrosian leader",
 				Ambrosia.getAmbrosia(),
+				Ambassador.class,
 				"Good day!  Quite a mess, this murder bit.",
 				"I hope they don't try to pin me to this murder!",
 				"My land is far too safe for an incident like this to happen here.",
@@ -51,6 +52,5 @@ public class AmbassadorAmber extends Leader {
     	}
 		return clue;
 	}
-	
 
 }

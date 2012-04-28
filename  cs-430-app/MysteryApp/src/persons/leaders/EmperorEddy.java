@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Emperor;
 import locations.Orient;
 
 
@@ -12,6 +12,7 @@ public class EmperorEddy extends Leader {
 		super("Emperor Eddy",
 				"Orient's fearless ruler",
 				Orient.getOrient(),
+				Emperor.class,
 				"Hello.  What a complication this is!",
 				"Excuse me but it's about time for the cricket match!",
 			    "What emperor could be without his empire? I know I won't be.",

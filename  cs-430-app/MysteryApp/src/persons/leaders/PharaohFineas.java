@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Pharaoh;
 import locations.Wallaby;
 
 public class PharaohFineas extends Leader {
@@ -11,6 +11,7 @@ public class PharaohFineas extends Leader {
 		super("Pharaoh Fineas",
 				"The stoic Wallabian head of state",
 				Wallaby.getWallaby(),
+				Pharaoh.class,
 				"Hello. I hope you can assist us.",
 				"It's too warm out here, can we please talk in my pyramid!",
 				"I am just glad it wasn't me.",

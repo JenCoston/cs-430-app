@@ -1,7 +1,7 @@
 package persons.leaders;
 
-import clues.Clue;
 import persons.Leader;
+import persons.activities.Queen;
 import locations.Edenborough;
 
 public class QueenLizzy extends Leader {
@@ -11,6 +11,7 @@ public class QueenLizzy extends Leader {
 		super("Queen Lizzy",
 				"Her royal highness of Edenborough",
 				Edenborough.getEdenborough(),
+				Queen.class,
 				"Oh dear what a shame this is!",
 				"Oh me, Oh my!",
 				"I simply cannot imagine this happening on our soil.",

@@ -1,11 +1,13 @@
 package locations;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import persons.NonPlayer;
 
+import game.Story;
 import items.Fire;
 import items.Item;
 
@@ -148,4 +150,23 @@ public abstract class Location {
 			n.nextState();
 		}
 	}*/
+    
+    public NonPlayer[] getNonPlayers() {
+		NonPlayer[] result;
+    	Object[] npcVals = npcs.values().toArray();
+    	if (Story.getStory().getVictim().getCurrentLocation().getName().equalsIgnoreCase(name)) {
+    		result = new NonPlayer[npcVals.length-1];
+    		for (int j=0; j<npcVals.length-1; j++) {
+    			if (!Story.getStory().isVictim(((NonPlayer)npcVals[j])))
+    				result[j] = (NonPlayer)npcVals[j];
+    		}
+    		return result;
+    	}
+    	else {
+    		result = new NonPlayer[npcVals.length];
+    		for (int i=0; i<npcVals.length; i++)
+    			result[i] = (NonPlayer)npcVals[i];
+    		return result;
+    	}
+    }
 }

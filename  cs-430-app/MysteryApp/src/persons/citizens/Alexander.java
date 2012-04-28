@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.AlexanderActivity;
 
 public class Alexander extends Citizen {
 	private static Alexander t;
@@ -10,6 +11,7 @@ public class Alexander extends Citizen {
 		super("Alexander",
 				"Alexander is a local man. After the war, he retired from the army. However, he still does not leave the house without his sword.",
 				Ambrosia.getAmbrosia(),
+				AlexanderActivity.class,
 				""
 		);
 	}

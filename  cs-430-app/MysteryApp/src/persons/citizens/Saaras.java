@@ -2,6 +2,7 @@ package persons.citizens;
 
 import persons.Citizen;
 import locations.Ambrosia;
+import persons.citizens.activities.SaarasActivity;
 
 public class Saaras extends Citizen {
 	private static Saaras t;
@@ -10,6 +11,7 @@ public class Saaras extends Citizen {
 		super("Saaras",
 				"Saaras started dancing at the age of 3. She has been classically trained in Natya the sacred Hindu musical theater styles. She usually only performs for the elite.",
 				Ambrosia.getAmbrosia(),
+				SaarasActivity.class,
 				""
 		);
 	}

@@ -2,10 +2,12 @@ package persons;
 
 import game.Story;
 import locations.Location;
+import persons.activities.NonPlayerActivity;
 import persons.states.NonPlayerDialog;
 import persons.states.NonPlayerState;
 import persons.states.WantItemState;
 import android.content.Context;
+import android.content.Intent;
 
 
 public abstract class NonPlayer extends Person {
@@ -15,8 +17,9 @@ public abstract class NonPlayer extends Person {
 	private NonPlayerState currentState;
 	private boolean interesting;
 	private NonPlayerDialog dialog;
+	private Class<? extends NonPlayerActivity> cl;
 	
-	public NonPlayer(String name, String desc, Location loc, String... choices) {
+	public NonPlayer(String name, String desc, Location loc, Class<? extends NonPlayerActivity> cl, String... choices) {
 		super(name);
 		this.desc = desc;
 		home = loc;
@@ -25,6 +28,7 @@ public abstract class NonPlayer extends Person {
 		currentState = null;
 		interesting = false;
 		dialog = new NonPlayerDialog(choices);
+		this.cl = cl;
 	}
 	
 	public String getFullName() {
@@ -97,5 +101,9 @@ public abstract class NonPlayer extends Person {
 
 	public NonPlayerState perform() {
 		return currentState.execute();///
+	}
+	
+	public Intent getIntent(Context context) {
+		return new Intent(context, cl);
 	}
 }
