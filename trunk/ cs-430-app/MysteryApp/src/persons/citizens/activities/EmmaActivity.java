@@ -10,7 +10,7 @@ public class EmmaActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.emma);
 		setNonPlayerFields(Emma.getEmma(), R.drawable.ambassador_head);
 	}
 }

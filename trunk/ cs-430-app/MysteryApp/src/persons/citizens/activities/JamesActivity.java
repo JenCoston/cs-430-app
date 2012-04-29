@@ -10,7 +10,7 @@ public class JamesActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.james);
 		setNonPlayerFields(James.getJames(), R.drawable.ambassador_head);
 	}
 }

@@ -10,7 +10,7 @@ public class AkilaActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.akila);
 		setNonPlayerFields(Akila.getAkila(), R.drawable.ambassador_head);
 	}
 }

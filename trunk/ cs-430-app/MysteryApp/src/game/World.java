@@ -172,26 +172,26 @@ public class World {
 	}
 	
 	private void putCitizensInLocations() {
-		Concordia.getConcordia().addNonPlayers(Aadrika.getAadrika());
-		Dislexia.getDislexia().addNonPlayers(Gadin.getGadin());
-		Orient.getOrient().addNonPlayers(Samantha.getSamantha());
-		Pacifica.getPacifica().addNonPlayers(James.getJames());
-		Keyser.getKeyser().addNonPlayers(Mason.getMason());
-		Ambrosia.getAmbrosia().addNonPlayers(David.getDavid());
-		Edenborough.getEdenborough().addNonPlayers(Benjamin.getBenjamin());
-		Peoria.getPeoria().addNonPlayers(Jackson.getJackson());
-		Scimitar.getScimitar().addNonPlayers(Amun.getAmun());
-		Wallaby.getWallaby().addNonPlayers(Noah.getNoah());
-		Concordia.getConcordia().addNonPlayers(Ethan.getEthan());
-		Dislexia.getDislexia().addNonPlayers(Isabella.getIsabella());
-		Orient.getOrient().addNonPlayers(Joshua.getJoshua());
-		Pacifica.getPacifica().addNonPlayers(Calgary.getCalgary());
-		Keyser.getKeyser().addNonPlayers(Ewan.getEwan());
-		Ambrosia.getAmbrosia().addNonPlayers(Akila.getAkila());
-		Edenborough.getEdenborough().addNonPlayers(Emma.getEmma());
-		Peoria.getPeoria().addNonPlayers(Andrew.getAndrew());
-		Scimitar.getScimitar().addNonPlayers(ChanJuan.getChanJuan());
-		Wallaby.getWallaby().addNonPlayers(Christina.getChristina());
+		Ambrosia.getAmbrosia().addNonPlayers(Catherine.getCatherine(), Ryan.getRyan());
+		
+		Concordia.getConcordia().addNonPlayers(Bernette.getBernette(), Gabrielle.getGabrielle(), Andre.getAndre());
+		
+		Dislexia.getDislexia().addNonPlayers(Elizaveta.getElizaveta(), Alexander.getAlexander(), Mathew.getMathew());
+		
+		Edenborough.getEdenborough().addNonPlayers(Joshua.getJoshua(), Calgary.getCalgary(), Ewan.getEwan());
+		
+		Keyser.getKeyser().addNonPlayers(Machakw.getMachakw(), Adoette.getAdoette(), David.getDavid());
+		
+		Orient.getOrient().addNonPlayers(ChanJuan.getChanJuan(), Mason.getMason(), Christina.getChristina());
+		
+		Pacifica.getPacifica().addNonPlayers(Andrew.getAndrew(), Emma.getEmma(), James.getJames());
+		
+		Peoria.getPeoria().addNonPlayers(Isabella.getIsabella(), Ethan.getEthan(), Gadin.getGadin(), 
+											Aadrika.getAadrika(), Saaras.getSaaras());
+		
+		Scimitar.getScimitar().addNonPlayers(Noah.getNoah(), Benjamin.getBenjamin(), Jackson.getJackson());
+		
+		Wallaby.getWallaby().addNonPlayers(Samantha.getSamantha(), Amun.getAmun(), Akila.getAkila());
 	}
 	
 	public Leader getLeader(int p) {

@@ -10,7 +10,7 @@ public class AadrikaActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.aadrika);
 		setNonPlayerFields(Aadrika.getAadrika(), R.drawable.ambassador_head);
 	}
 }

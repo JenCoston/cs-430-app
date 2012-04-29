@@ -10,7 +10,7 @@ public class MathewActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.mathew);
 		setNonPlayerFields(Mathew.getMathew(), R.drawable.ambassador_head);
 	}
 }
