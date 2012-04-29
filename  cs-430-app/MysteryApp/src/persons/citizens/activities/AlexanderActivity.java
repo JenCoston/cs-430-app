@@ -10,7 +10,7 @@ public class AlexanderActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.alexander);
 		setNonPlayerFields(Alexander.getAlexander(), R.drawable.ambassador_head);
 	}
 }

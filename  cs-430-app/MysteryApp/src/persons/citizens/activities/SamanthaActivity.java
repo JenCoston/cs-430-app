@@ -10,7 +10,7 @@ public class SamanthaActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.samantha);
 		setNonPlayerFields(Samantha.getSamantha(), R.drawable.ambassador_head);
 	}
 }

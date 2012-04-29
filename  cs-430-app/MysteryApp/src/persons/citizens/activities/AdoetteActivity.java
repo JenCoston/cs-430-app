@@ -10,7 +10,7 @@ public class AdoetteActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.adoette);
 		setNonPlayerFields(Adoette.getAdoette(), R.drawable.ambassador_head);
 	}
 }

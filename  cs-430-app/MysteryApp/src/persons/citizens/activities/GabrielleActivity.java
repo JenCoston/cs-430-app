@@ -10,7 +10,7 @@ public class GabrielleActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.gabrielle);
 		setNonPlayerFields(Gabrielle.getGabrielle(), R.drawable.ambassador_head);
 	}
 }

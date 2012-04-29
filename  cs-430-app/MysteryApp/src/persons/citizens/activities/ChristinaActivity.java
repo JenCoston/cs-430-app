@@ -10,7 +10,7 @@ public class ChristinaActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.christina);
 		setNonPlayerFields(Christina.getChristina(), R.drawable.ambassador_head);
 	}
 }

@@ -10,7 +10,7 @@ public class EwanActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.ewan);
 		setNonPlayerFields(Ewan.getEwan(), R.drawable.ambassador_head);
 	}
 }

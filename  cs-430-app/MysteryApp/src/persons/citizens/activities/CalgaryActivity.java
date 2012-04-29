@@ -10,7 +10,7 @@ public class CalgaryActivity extends NonPlayerActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ambassador);
+		setContentView(R.layout.calgary);
 		setNonPlayerFields(Calgary.getCalgary(), R.drawable.ambassador_head);
 	}
 }
