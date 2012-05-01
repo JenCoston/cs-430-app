@@ -1,7 +1,7 @@
 package persons.citizens;
 
 import persons.Citizen;
-import locations.Ambrosia;
+import locations.Wallaby;
 import persons.citizens.activities.AkilaActivity;
 
 public class Akila extends Citizen {
@@ -10,7 +10,7 @@ public class Akila extends Citizen {
 	private Akila() {
 		super("Akila",
 				"Akila beauty is renown. As the daughter of the pyramid architect, not a day goes by where she goes without. Anything she desires is hers.",
-				Ambrosia.getAmbrosia(),
+				Wallaby.getWallaby(),
 				AkilaActivity.class,
 				""
 		);
