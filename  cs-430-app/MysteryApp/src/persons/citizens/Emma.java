@@ -1,7 +1,7 @@
 package persons.citizens;
 
 import persons.Citizen;
-import locations.Ambrosia;
+import locations.Pacifica;
 import persons.citizens.activities.EmmaActivity;
 
 public class Emma extends Citizen {
@@ -10,7 +10,7 @@ public class Emma extends Citizen {
 	private Emma() {
 		super("Emma",
 				"Emma makes apple butter for the tourists using tried and true methods taught to her by her great-grandmother. The secret is the cedar wood used for the fire.",
-				Ambrosia.getAmbrosia(),
+				Pacifica.getPacifica(),
 				EmmaActivity.class,
 				""
 		);

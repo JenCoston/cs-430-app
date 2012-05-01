@@ -23,7 +23,7 @@ public class NewGame extends Activity {
 		 // Use existing character
     	// Load existing char info somehow
     	Game.getGame();
-    	showDialog(Story.getStory().getVictim().getFullName() + "was murdered yesterday! Can you help us find the culprit?", 5000);
+    	showDialog(Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?", 5000);
     	Intent i = new Intent(getApplicationContext(), Map.class);
         startActivity(i);
     }

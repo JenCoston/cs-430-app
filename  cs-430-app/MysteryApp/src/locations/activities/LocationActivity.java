@@ -3,12 +3,12 @@ package locations.activities;
 import puzzles.RiddlePuzzle;
 import persons.NonPlayer;
 import persons.Player;
-import persons.citizens.Aadrika;
 import items.Item;
 import locations.Location;
 
-import com.android.mysteryApp.Load;
 import com.android.mysteryApp.Map;
+import com.android.mysteryApp.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -65,6 +65,8 @@ public abstract class LocationActivity extends Activity {
         	builder.setItems(npcChoices, new DialogInterface.OnClickListener() {
         		public void onClick(DialogInterface dialog, int choice) {
         			//Intent characterIntent = newCharacterIntentFactory(npcChoices[choice].toString());
+        			NonPlayer curr = npcs[choice];
+        			showDialog(curr.getName() + ": " + curr.getDescription(), 3000, R.drawable.president1_head);
         			Intent characterIntent = npcs[choice].getIntent(getApplicationContext());
         			startActivity(characterIntent);
         			//Toast.makeText(getApplicationContext(), npcChoices[choice], Toast.LENGTH_LONG).show();

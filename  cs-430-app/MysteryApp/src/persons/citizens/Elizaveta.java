@@ -1,7 +1,7 @@
 package persons.citizens;
 
 import persons.Citizen;
-import locations.Ambrosia;
+import locations.Dislexia;
 import persons.citizens.activities.ElizavetaActivity;
 
 public class Elizaveta extends Citizen {
@@ -10,7 +10,7 @@ public class Elizaveta extends Citizen {
 	private Elizaveta() {
 		super("Elizaveta",
 				"Princess Elizaveta is the oldest daughter of the Czar. Before the revolution, her family was the richest in the land. Now, she lives in exile with her family in the housing for the homeless.",
-				Ambrosia.getAmbrosia(),
+				Dislexia.getDislexia(),
 				ElizavetaActivity.class,
 				""
 		);

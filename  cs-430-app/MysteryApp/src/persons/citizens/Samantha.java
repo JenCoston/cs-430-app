@@ -1,7 +1,7 @@
 package persons.citizens;
 
 import persons.Citizen;
-import locations.Ambrosia;
+import locations.Wallaby;
 import persons.citizens.activities.SamanthaActivity;
 
 public class Samantha extends Citizen {
@@ -10,7 +10,7 @@ public class Samantha extends Citizen {
 	private Samantha() {
 		super("Samantha",
 				"Samantha wants to be athletic and looking into the many different sports. Currently she is trying Frisbee.",
-				Ambrosia.getAmbrosia(),
+				Wallaby.getWallaby(),
 				SamanthaActivity.class,
 				""
 		);
