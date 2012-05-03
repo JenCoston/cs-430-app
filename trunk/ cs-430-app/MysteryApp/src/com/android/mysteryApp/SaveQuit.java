@@ -2,8 +2,11 @@ package com.android.mysteryApp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class SaveQuit extends Activity {
     /** Called when the activity is first created. */
@@ -14,7 +17,10 @@ public class SaveQuit extends Activity {
     }
     
     public void saveCont(View view){
-        // Save and Continue
+    	SharedPreferences settings2 = getSharedPreferences("save2", MODE_PRIVATE);
+        Editor editor = settings2.edit();
+        editor.putBoolean("testMode2", true);
+        editor.commit();
     }
     
     public void saveQuit(View view){
