@@ -155,10 +155,14 @@ public abstract class Location {
 		NonPlayer[] result;
     	Object[] npcVals = npcs.values().toArray();
     	if (Story.getStory().getVictim().getCurrentLocation().getName().equalsIgnoreCase(name)) {
+    		ArrayList<NonPlayer> temp = new ArrayList<NonPlayer>();
+    		for (int k=0; k<npcVals.length; k++) {
+    			if (!Story.getStory().isVictim(((NonPlayer)npcVals[k])))
+    				temp.add((NonPlayer)npcVals[k]);
+    		}
     		result = new NonPlayer[npcVals.length-1];
-    		for (int j=0; j<npcVals.length-1; j++) {
-    			if (!Story.getStory().isVictim(((NonPlayer)npcVals[j])))
-    				result[j] = (NonPlayer)npcVals[j];
+    		for (int j=0; j<temp.size(); j++) {
+    			result[j] = temp.get(j);
     		}
     		return result;
     	}

@@ -7,6 +7,7 @@ import items.Item;
 import locations.Location;
 
 import com.android.mysteryApp.Map;
+import com.android.mysteryApp.Menu;
 import com.android.mysteryApp.R;
 
 import android.app.Activity;
@@ -108,5 +109,10 @@ public abstract class LocationActivity extends Activity {
 		dialogView.addView(coolImage, 0);
 		dialog.setDuration(milliseconds);
 		dialog.show();
+	}
+	
+	public void openMenu(View view) {
+		Intent i =new Intent(getApplicationContext(), Menu.class);
+		startActivity(i);
 	}
 }
