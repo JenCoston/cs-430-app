@@ -124,7 +124,7 @@ public class Puzzles {
     		break;
     		
     	case 14:
-    		puzzle = "People flock to Wallaby to collect seashells on the beaches." + 
+    		puzzle = "People flock to this land to collect seashells on the beaches." + 
     				"How many shells could a tourist collect today?";
     	}
     	return puzzle;

@@ -3,10 +3,8 @@ package puzzles;
 import persons.Investigator;
 import game.Logbook;
 import game.Story;
-
 import com.android.mysteryApp.Lose;
 import com.android.mysteryApp.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,14 +20,14 @@ public class PicturePuzzle extends PuzzleActivity {
         super.onCreate(savedInstanceState);
         p = Puzzles.getPuzzle().singlePuzzle();
         id = p.getID();
-        setContentView(p.getID());
+        setContentView(id);
         showDialog(p.getRiddle(), 5000);
     }
 
 	@Override
 	public void submitAnswer(View view) {
 		      //plain text input
-	    final EditText plain_edit_text = (EditText) this.findViewById(R.id.editText1);
+		final EditText plain_edit_text = (EditText) this.findViewById(R.id.editText1);
 	    String response = plain_edit_text.getText().toString();
 	    if(response == null){
 	    	  showDialog("Make sure you give an answer!", 10000); 
