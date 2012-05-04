@@ -1,5 +1,7 @@
 package locations;
 
+import java.util.Collections;
+
 public class Concordia extends Location {
 	private static Concordia t;
 	
@@ -25,6 +27,14 @@ public class Concordia extends Location {
 		
 	}
 
+	@Override
+    public void clueList(){
+    	int numClues = 10;
+		for (int i=0; i< numClues; i++) {
+			clueList.add(clues(i));
+		}
+		Collections.shuffle(clueList);
+    }
 	@Override
 	public String clues(int n) {
     	String clue = null;

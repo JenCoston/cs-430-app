@@ -42,6 +42,11 @@ public class Map extends Activity {
         startActivity(i);
     }
     
+    public void goLog(View view){
+    	Intent i = new Intent(getApplicationContext(), LogbookA.class);
+        startActivity(i);
+    }
+    
     public void startBackground1(View view){
     	showDialog(Concordia.getConcordia().getName() + ": " + Concordia.getConcordia().getDescription(), 3000);
     	Intent i = new Intent(getApplicationContext(), ConcordiaPlace.class);

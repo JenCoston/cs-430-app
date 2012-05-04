@@ -24,6 +24,8 @@ public class Story {
 	private ArrayList<NonPlayer> npcs;
 	private int interestingNPC;
 	private NonPlayerStateFactory factory;
+	private ArrayList<String> clueList = new ArrayList<String>();
+	private int i = 0;
 	
 	private Story() {
 		generateStory();
@@ -79,7 +81,38 @@ public class Story {
 		victim = w.getLeader(v);
 		murderWeapon = MurderWeapon.getMurderWeapon(gen.nextInt(weaps));
 		murderLocation = w.getLocation(gen.nextInt(locs));
+		generateClues();
 	}
+	
+	private void generateClues(){
+		ArrayList<String> tmp2 = victim.getClueList();
+		for(String i: tmp2){
+			clueList.add(i);
+		}
+		ArrayList<String> tmp = murderLocation.getClueList();
+		for(String i: tmp){
+			clueList.add(i);
+		}
+		ArrayList<String >tmp1 = murderWeapon.getClueList();
+		for(String i: tmp1){
+			clueList.add(i);
+		}
+		Collections.shuffle(clueList);
+	}
+	
+    public String getClue(){
+    	String c;
+    	if(i <= clueList.size()){
+			c = clueList.get(i);
+			i++;
+		}
+		else{
+			i = 0;
+			Collections.shuffle(clueList);
+			c = clueList.get(i);
+		}
+    	return c;
+    }
 	
 	private ArrayList<Location> generateLocationFillSequence() {
 		World w = World.getWorld();

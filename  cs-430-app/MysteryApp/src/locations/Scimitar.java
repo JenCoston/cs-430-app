@@ -1,5 +1,7 @@
 package locations;
 
+import java.util.Collections;
+
 public class Scimitar extends Location {
 	private static Scimitar t;
 	
@@ -52,5 +54,14 @@ public class Scimitar extends Location {
     	}
 		return clue;
 	}
+	
+	@Override
+    public void clueList(){
+    	int numClues = 10;
+		for (int i=0; i< numClues; i++) {
+			clueList.add(clues(i));
+		}
+		Collections.shuffle(clueList);
+    }
 
 }

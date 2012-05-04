@@ -7,11 +7,12 @@ public class Riddles {
 	
     private static Riddles t;
     private static ArrayList<Riddle> result;
-    private static int i = 0;
+    private static int i;
     
     
     private Riddles(){
     	riddleList();
+    	i = 0;
     }
     
 	public static Riddles getRiddles() {

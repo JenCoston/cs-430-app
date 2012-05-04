@@ -1,5 +1,7 @@
 package persons.leaders;
 
+import java.util.Collections;
+
 import persons.Leader;
 import persons.activities.President;
 import locations.Pacifica;
@@ -52,5 +54,13 @@ public class PresidentPaul extends Leader {
     	}
 		return clue;
 	}
+	
+	   public void clueList(){
+	    	int numClues = 10;
+			for (int i=0; i< numClues; i++) {
+				clueList.add(clues(i));
+			}
+			Collections.shuffle(clueList);
+	    }
 
 }
