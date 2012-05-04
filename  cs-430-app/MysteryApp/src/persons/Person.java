@@ -83,7 +83,9 @@ public abstract class Person {
 		String it = "";
 		if(inventory != null){
 			for(Item i: inventory){
-					it += i.getName() + "\n";
+					if(i != null){
+						it += i.getName() + "\n";
+					}
 				}
 		}
 		else{
