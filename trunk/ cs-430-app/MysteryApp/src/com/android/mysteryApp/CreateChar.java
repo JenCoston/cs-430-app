@@ -1,5 +1,8 @@
 package com.android.mysteryApp;
 
+import game.Game;
+import game.Logbook;
+import game.Story;
 import persons.Player;
 import android.app.Activity;
 import android.content.Intent;
@@ -27,6 +30,9 @@ public class CreateChar extends Activity {
         }
         else{
         	Player.getPlayer().setUpPlayer(response);
+        	Game.getGame();
+        	String text = "Dear " + Player.getPlayer().getName() + ",\n" + Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?";
+        	Logbook.getLogbook().addNote("\t" + text);
         }
     	Intent i = new Intent(getApplicationContext(), Map.class);
         startActivity(i);
