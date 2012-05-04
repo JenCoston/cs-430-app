@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.android.mysteryApp.Lose;
 import com.android.mysteryApp.Map;
 import com.android.mysteryApp.R;
 
@@ -44,9 +45,11 @@ public class RiddlePuzzle extends PuzzleActivity {
       }
       else{
     	  String invest = Investigator.getInvestigator().displayInvestigator();
-    	  showDialog(invest, 3000);
+    	  showDialog(invest, 10000);
+    	  Logbook.getLogbook().addNote(invest);
     	  if(Investigator.getInvestigator().investigatorWin()){
-	    	//Lose screen. Game over.
+    		  Intent i = new Intent(getApplicationContext(), Lose.class);
+              startActivity(i);
     	  }
     	  else{
     		  Intent i = new Intent(getApplicationContext(), Map.class);

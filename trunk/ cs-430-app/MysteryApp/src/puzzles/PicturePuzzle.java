@@ -40,7 +40,8 @@ public class PicturePuzzle extends PuzzleActivity {
 	    }
 	    else{
 	    	String invest = Investigator.getInvestigator().displayInvestigator();
-	    	showDialog(invest, 3000);
+	    	Logbook.getLogbook().addNote(invest);
+	    	showDialog(invest, 10000);
 	    	if(Investigator.getInvestigator().investigatorWin()){
 	    		Intent i = new Intent(getApplicationContext(), Lose.class);
                 startActivity(i);
@@ -49,7 +50,7 @@ public class PicturePuzzle extends PuzzleActivity {
 	}
 	
 	public void question(View view){
-		showDialog(p.getRiddle(), 3000);
+		showDialog(p.getRiddle(), 10000);
 	}
 
 }
