@@ -11,6 +11,6 @@ public class EthanActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ethan);
-		setNonPlayerFields(Ethan.getEthan(), R.drawable.ambassador_head);
+		setNonPlayerFields(Ethan.getEthan(), R.drawable.deadend_sm);
 	}
 }

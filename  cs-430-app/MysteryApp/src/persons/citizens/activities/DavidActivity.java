@@ -11,6 +11,6 @@ public class DavidActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.david);
-		setNonPlayerFields(David.getDavid(), R.drawable.ambassador_head);
+		setNonPlayerFields(David.getDavid(), R.drawable.deadend_sm);
 	}
 }

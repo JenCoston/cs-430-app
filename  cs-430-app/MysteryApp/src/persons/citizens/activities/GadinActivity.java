@@ -11,6 +11,6 @@ public class GadinActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gadin);
-		setNonPlayerFields(Gadin.getGadin(), R.drawable.ambassador_head);
+		setNonPlayerFields(Gadin.getGadin(), R.drawable.deadend_sm);
 	}
 }

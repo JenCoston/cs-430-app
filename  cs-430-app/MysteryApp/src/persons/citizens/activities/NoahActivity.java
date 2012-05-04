@@ -11,6 +11,6 @@ public class NoahActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.noah);
-		setNonPlayerFields(Noah.getNoah(), R.drawable.ambassador_head);
+		setNonPlayerFields(Noah.getNoah(), R.drawable.deadend_sm);
 	}
 }
