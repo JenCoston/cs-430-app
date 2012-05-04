@@ -11,6 +11,6 @@ public class RyanActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ryan);
-		setNonPlayerFields(Ryan.getRyan(), R.drawable.ambassador_head);
+		setNonPlayerFields(Ryan.getRyan(), R.drawable.deadend_sm);
 	}
 }

@@ -11,6 +11,6 @@ public class MasonActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mason);
-		setNonPlayerFields(Mason.getMason(), R.drawable.ambassador_head);
+		setNonPlayerFields(Mason.getMason(), R.drawable.deadend_sm);
 	}
 }

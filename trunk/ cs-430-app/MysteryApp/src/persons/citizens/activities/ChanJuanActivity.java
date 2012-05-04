@@ -11,6 +11,6 @@ public class ChanJuanActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.chanjuan);
-		setNonPlayerFields(ChanJuan.getChanJuan(), R.drawable.ambassador_head);
+		setNonPlayerFields(ChanJuan.getChanJuan(), R.drawable.deadend_sm);
 	}
 }

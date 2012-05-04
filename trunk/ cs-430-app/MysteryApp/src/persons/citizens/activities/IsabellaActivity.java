@@ -11,6 +11,6 @@ public class IsabellaActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.isabella);
-		setNonPlayerFields(Isabella.getIsabella(), R.drawable.ambassador_head);
+		setNonPlayerFields(Isabella.getIsabella(), R.drawable.deadend_sm);
 	}
 }

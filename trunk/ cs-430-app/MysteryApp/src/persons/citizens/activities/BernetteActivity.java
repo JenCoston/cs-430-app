@@ -11,6 +11,6 @@ public class BernetteActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bernette);
-		setNonPlayerFields(Bernette.getBernette(), R.drawable.ambassador_head);
+		setNonPlayerFields(Bernette.getBernette(), R.drawable.deadend_sm);
 	}
 }

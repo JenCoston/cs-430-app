@@ -67,7 +67,7 @@ public abstract class LocationActivity extends Activity {
         		public void onClick(DialogInterface dialog, int choice) {
         			//Intent characterIntent = newCharacterIntentFactory(npcChoices[choice].toString());
         			NonPlayer curr = npcs[choice];
-        			showDialog(curr.getName() + ": " + curr.getDescription(), 3000, R.drawable.president1_head);
+        			showDialog(curr.getName() + ": " + curr.getDescription(), 3000, R.drawable.deadend_sm);
         			Intent characterIntent = npcs[choice].getIntent(getApplicationContext());
         			startActivity(characterIntent);
         			//Toast.makeText(getApplicationContext(), npcChoices[choice], Toast.LENGTH_LONG).show();

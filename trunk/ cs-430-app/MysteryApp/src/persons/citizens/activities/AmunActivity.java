@@ -11,6 +11,6 @@ public class AmunActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.amun);
-		setNonPlayerFields(Amun.getAmun(), R.drawable.ambassador_head);
+		setNonPlayerFields(Amun.getAmun(), R.drawable.deadend_sm);
 	}
 }

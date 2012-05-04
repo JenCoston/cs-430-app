@@ -11,6 +11,6 @@ public class AndreActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.andre);
-		setNonPlayerFields(Andre.getAndre(), R.drawable.ambassador_head);
+		setNonPlayerFields(Andre.getAndre(), R.drawable.deadend_sm);
 	}
 }

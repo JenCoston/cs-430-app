@@ -11,6 +11,6 @@ public class ElizavetaActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.elizaveta);
-		setNonPlayerFields(Elizaveta.getElizaveta(), R.drawable.ambassador_head);
+		setNonPlayerFields(Elizaveta.getElizaveta(), R.drawable.deadend_sm);
 	}
 }

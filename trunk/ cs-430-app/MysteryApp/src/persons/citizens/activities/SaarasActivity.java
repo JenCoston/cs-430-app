@@ -11,6 +11,6 @@ public class SaarasActivity extends NonPlayerActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.saaras);
-		setNonPlayerFields(Saaras.getSaaras(), R.drawable.ambassador_head);
+		setNonPlayerFields(Saaras.getSaaras(), R.drawable.deadend_sm);
 	}
 }
