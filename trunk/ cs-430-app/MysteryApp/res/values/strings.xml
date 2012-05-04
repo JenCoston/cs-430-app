@@ -27,13 +27,13 @@
     <string name="tmpinv">This will display inventory</string>
     <string name="returngame">Return to Current Game</string>
     <string name="tmplog">This will display logbook</string>
-    <string name="log">View the Logbook</string>
+    <string name="log">Logbook</string>
     <string name="inv">Check Inventory</string>
     <string name="sandq">Save and/or Quit</string>
     <string name="tmpmap">Display interactive map here</string>
     <string name="tmpplay">Not sure how this will be</string>
     <string name="map">View the Map</string>
-    <string name="menu">View In-Game Menu</string>
+    <string name="menu">Menu</string>
     <string name="blank"></string>
     <string name="talk">Talk</string>
     <string name="item">Item</string>
@@ -61,5 +61,10 @@
     <string name="dictator">Dictator Dave</string>
     <string name="emperor">Emperor Eddy</string>
     <string name="gamename">Dead End</string>
+    <string name="names">Murderer?</string>
+    <string name="items">Murder Weapon?</string>
+    <string name="places">Murder Location?</string>
+    <string name="solvemystery">Fill in your guesses for murderer, murder weapon, location of the crime and hit submit. Wrong answers lead to dead ends!</string>
+    <string name="playerName">Enter the name you would like your character be called!</string>
 
 </resources>

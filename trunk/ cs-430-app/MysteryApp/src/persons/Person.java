@@ -79,4 +79,11 @@ public abstract class Person {
 		currentLocation = loc;
 	}
 	
+	public String listItems(){
+		String it = "";
+		for(Item i: inventory){
+			it += i.getName() + "\n";
+		}
+		return it;
+	}
 }
