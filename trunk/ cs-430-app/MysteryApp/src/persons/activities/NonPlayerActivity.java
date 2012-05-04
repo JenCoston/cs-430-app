@@ -4,6 +4,7 @@ import game.Logbook;
 import persons.NonPlayer;
 import persons.Player;
 import persons.states.NonPlayerState;
+import puzzles.PicturePuzzle;
 import puzzles.RiddlePuzzle;
 
 import com.android.mysteryApp.Map;
@@ -38,6 +39,10 @@ public abstract class NonPlayerActivity extends Activity {
     		//np.perform(getApplicationContext());//may need to get a return value, etc
     		if (ns.getId() == 1) {
     			Intent i = new Intent(getApplicationContext(), RiddlePuzzle.class);
+    			startActivity(i);
+    		}
+    		else if(ns.getId() == 2){
+    			Intent i = new Intent(getApplicationContext(), PicturePuzzle.class);
     			startActivity(i);
     		}
     	}
