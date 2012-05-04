@@ -38,11 +38,11 @@ public class Solve extends Activity {
         }
         else{
         	if(Story.getStory().solved(response, response1, response2)){
-        		Intent i = new Intent(getApplicationContext(), MysteryAppActivity.class);
+        		Intent i = new Intent(getApplicationContext(), Win.class);
                 startActivity(i);
         	}
         	else{
-        		Intent i = new Intent(getApplicationContext(), MysteryAppActivity.class);
+        		Intent i = new Intent(getApplicationContext(), Lose.class);
                 startActivity(i);
         	}
         }
