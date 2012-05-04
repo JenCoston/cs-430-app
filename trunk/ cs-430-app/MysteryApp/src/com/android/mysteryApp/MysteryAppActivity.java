@@ -48,7 +48,10 @@ public class MysteryAppActivity extends Activity {
     }
     
     public void quit(View view){   
-        // Quit Game
+    	Intent intent = new Intent(Intent.ACTION_MAIN);
+    	intent.addCategory(Intent.CATEGORY_HOME);
+    	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    	startActivity(intent);
     }
     
 }
