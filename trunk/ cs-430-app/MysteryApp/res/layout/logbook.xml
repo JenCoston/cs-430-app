@@ -18,6 +18,7 @@
         android:maxLines = "200"
 		android:scrollbars = "vertical"
 		android:gravity="center_vertical|center_horizontal"
+		android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/blank" />
 
     <LinearLayout

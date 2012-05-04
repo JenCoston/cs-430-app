@@ -33,7 +33,7 @@ public class Solve extends Activity {
         final EditText plain_edit_text2 = (EditText) this.findViewById(R.id.editText3);
         String response2 = plain_edit_text2.getText().toString();
         
-        if(response == null || response1 == null || response2 == null){
+        if(response == null || response1 == null || response2 == null || response.equalsIgnoreCase("") || response1.equalsIgnoreCase("") || response2.equalsIgnoreCase("")){
         	showDialog("Make sure you give an answer to all three areas!", 5000); 
         }
         else{
