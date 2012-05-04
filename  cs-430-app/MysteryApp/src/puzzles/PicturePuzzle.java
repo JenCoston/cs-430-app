@@ -21,7 +21,7 @@ public class PicturePuzzle extends PuzzleActivity {
         p = Puzzles.getPuzzle().singlePuzzle();
         id = p.getID();
         setContentView(id);
-        showDialog(p.getRiddle(), 5000);
+        showDialog(p.getRiddle(), 10000);
     }
 
 	@Override

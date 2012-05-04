@@ -36,8 +36,8 @@ public class Investigator{
 	
 	public String displayInvestigator(){
 		String tmp;
-		if(steps <= 20){
-			tmp = "The supreme" + name + "found the clue. He is one step closer to solving this mystery. He is at step " + steps + " of 10.";
+		if(steps <= 4){
+			tmp = "The supreme" + name + "found the clue. He is one step closer to solving this mystery. He is at step " + steps + " of 4.";
 			steps++;
 		}
 		else{
@@ -47,7 +47,7 @@ public class Investigator{
 	}
 	
 	public boolean investigatorWin(){
-		if(steps > 10){
+		if(steps > 4){
 			return true;
 		}
 		return false;
