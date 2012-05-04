@@ -81,8 +81,13 @@ public abstract class Person {
 	
 	public String listItems(){
 		String it = "";
-		for(Item i: inventory){
-			it += i.getName() + "\n";
+		if(inventory != null){
+			for(Item i: inventory){
+					it += i.getName() + "\n";
+				}
+		}
+		else{
+			it = "No items currently in the inventory.";
 		}
 		return it;
 	}
