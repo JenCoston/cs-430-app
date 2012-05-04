@@ -6,7 +6,7 @@ import android.os.Bundle;
 import persons.NonPlayer;
 import puzzles.PicturePuzzle;
 
-public abstract class PuzzleState extends NonPlayerState {
+public class PuzzleState extends NonPlayerState {
 	
 	public PuzzleState(NonPlayer np, String sayBefore) {
 		super(PUZZLE_STATE, np, "See if you can crack this puzzle...");

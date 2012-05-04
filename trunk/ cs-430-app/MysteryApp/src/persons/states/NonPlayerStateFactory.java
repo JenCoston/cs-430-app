@@ -18,7 +18,7 @@ public class NonPlayerStateFactory {
 		NonPlayerState result;
 		switch (tempCurr) {
 			case 0:
-				result =  new WantItemState(interestingNP, "Rope");
+				result =  new PuzzleState(interestingNP, "");
 				break;
 			case 1:
 				result = new RiddleState(interestingNP, "", "");
@@ -31,6 +31,9 @@ public class NonPlayerStateFactory {
 				break;
 			case 4:
 				result = new WantItemState(interestingNP, "Poison");
+				break;
+			case 5:
+				result = new PuzzleState(interestingNP, "");
 				break;
 			default:
 				result = new RiddleState(interestingNP, "", "");

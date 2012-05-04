@@ -4,9 +4,11 @@ import persons.Investigator;
 import game.Logbook;
 import game.Story;
 
+import com.android.mysteryApp.Lose;
 import com.android.mysteryApp.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -42,7 +44,8 @@ public class PicturePuzzle extends PuzzleActivity {
 	    	String invest = Investigator.getInvestigator().displayInvestigator();
 	    	showDialog(invest, 3000);
 	    	if(Investigator.getInvestigator().investigatorWin()){
-	    		//Lose screen. Game over.
+	    		Intent i = new Intent(getApplicationContext(), Lose.class);
+                startActivity(i);
 	    	}
 	    }
 	}
