@@ -25,7 +25,7 @@ public class NewGame extends Activity {
 		 // Use existing character
     	// Load existing char info somehow
     	Game.getGame();
-    	String text = Player.getPlayer().getName() + "\n" + Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?";
+    	String text = Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?";
     	Logbook.getLogbook().addNote("\t" + text);
     	showDialog(text, 10000);
     	Intent i = new Intent(getApplicationContext(), Map.class);
