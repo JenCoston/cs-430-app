@@ -8,21 +8,20 @@ import locations.Location;
 
 public abstract class Leader extends NonPlayer {
 	
-	private ArrayList<String> clueList;
+	protected ArrayList<String> clueList = new ArrayList<String>();
 	private static int i = 0;
 	
 	public Leader(String name, String desc, Location location, Class<? extends NonPlayerActivity> cl, String... choices) {
 		super(name, desc, location, cl, choices);
+		clueList();
 	}
 	
 	public abstract String clues(int n);
 	
-    public void clueList(){
-    	int numRiddles = 10;
-		for (int i=0; i< numRiddles; i++) {
-			clueList.add(clues(i));
-		}
-		Collections.shuffle(clueList);
+    public abstract void clueList();
+    
+    public ArrayList<String> getClueList(){
+    	return clueList;
     }
 
     public String getClue(){

@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import persons.NonPlayer;
+import puzzles.PicturePuzzle;
 import puzzles.RiddlePuzzle;
 
 public class RiddleState extends NonPlayerState implements RiddleStrings, StateConstants {

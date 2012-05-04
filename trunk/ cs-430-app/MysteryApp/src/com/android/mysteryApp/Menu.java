@@ -15,7 +15,7 @@ public class Menu extends Activity {
     
     public void logbook(View view){
         // View the Logbook
-        Intent i = new Intent(getApplicationContext(), Logbook.class);
+        Intent i = new Intent(getApplicationContext(), LogbookA.class);
         startActivity(i);
     }
     

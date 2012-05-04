@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class PuzzleActivity extends Activity{
+public abstract class PuzzleActivity extends Activity{
 	
 	protected int id;
 	
@@ -24,20 +24,9 @@ public class PuzzleActivity extends Activity{
 		startActivity(i);
 	}
 	
-	public void submitAnswer(View view){
-	      //plain text input
-        final EditText plain_edit_text = (EditText) this.findViewById(R.id.editText1);
-        String reponse = plain_edit_text.getText().toString();
-        if(Riddles.getRiddles().correct(reponse, id)){
-        	showDialog("Congratulations! This time!", 3000, R.drawable.bomb_sm);
-        	Story.getStory().advanceInterestingNonPlayer();
-        }
-        else{
-        	showDialog("Too bad ", 3000, R.drawable.bomb_sm);
-        }
-	}
+	public abstract void submitAnswer(View view);
 	
-	public void showDialog(String message, int milliseconds, int smallImgId)
+	public void showDialog(String message, int milliseconds)
 	{
 		// show message
 		Toast dialog = Toast.makeText(
@@ -47,9 +36,6 @@ public class PuzzleActivity extends Activity{
 
 		dialog.setGravity(Gravity.CENTER, 0, 0);
 		LinearLayout dialogView = (LinearLayout) dialog.getView();
-		ImageView coolImage = new ImageView(getApplicationContext());
-		coolImage.setImageResource(smallImgId);
-		dialogView.addView(coolImage, 0);
 		dialog.setDuration(milliseconds);
 		dialog.show();
 	}

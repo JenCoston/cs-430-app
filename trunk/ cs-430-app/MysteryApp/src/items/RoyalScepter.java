@@ -1,5 +1,7 @@
 package items;
 
+import java.util.Collections;
+
 import com.android.mysteryApp.R;
 
 
@@ -25,4 +27,12 @@ public class RoyalScepter extends Item {
     	}
 		return clue;
 	}
+	
+    public void clueList(){
+    	int numClues = 10;
+		for (int i=0; i< numClues; i++) {
+			clueList.add(clues(i));
+		}
+		Collections.shuffle(clueList);
+    }
 }

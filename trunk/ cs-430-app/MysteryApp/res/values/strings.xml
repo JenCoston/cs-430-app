@@ -45,5 +45,21 @@
     <string name="look">Look</string>
     <string name="disclaimer">Disclaimers</string>
     <string name="question">Clue</string>
+    <string name="ambrosia">          Ambrosia               </string>
+    <string name="scimitar">Scimitar</string>
+    <string name="pacifica">Pacifica</string>
+    <string name="wallaby">Wallaby</string>
+    <string name="orient">Orient</string>
+    <string name="concordia">Concordia</string>
+    <string name="keyser">Keyser</string>
+    <string name="dislexia"> Dislexia</string>
+    <string name="edenborough">Edenborough</string>
+    <string name="peoria">Peoria</string>
+    <string name="solve">Solve the Mystery</string>
+    <string name="ambassador">Ambassador Amber</string>
+    <string name="chancellor">Chancellor Chuck</string>
+    <string name="dictator">Dictator Dave</string>
+    <string name="emperor">Emperor Eddy</string>
+    <string name="gamename">Dead End</string>
 
 </resources>

@@ -17,7 +17,7 @@ public abstract class Location {
 	private Hashtable<String, Item> items;
 	private String desc;
 	private int state;
-	private ArrayList<String> clueList;
+	protected ArrayList<String> clueList = new ArrayList<String>();
 	private static int i = 0;
 	
 	public Location(String n, String description) {
@@ -25,6 +25,7 @@ public abstract class Location {
 		npcs = new Hashtable<String, NonPlayer>();
 		items = new Hashtable<String, Item>();
 		desc = description;
+		clueList();
 	}
 
 	public String getName() {
@@ -118,13 +119,7 @@ public abstract class Location {
 	
 	public abstract String clues(int n);
 	
-    public void clueList(){
-    	int numRiddles = 10;
-		for (int i=0; i< numRiddles; i++) {
-			clueList.add(clues(i));
-		}
-		Collections.shuffle(clueList);
-    }
+    public abstract void clueList();
     
     public String getClue(){
     	String c;
@@ -138,6 +133,10 @@ public abstract class Location {
 			c = clueList.get(i);
 		}
     	return c;
+    }
+    
+    public ArrayList<String> getClueList(){
+    	return clueList;
     }
 
 	/*public void makeInteresting() {

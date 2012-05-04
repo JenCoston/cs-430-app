@@ -7,13 +7,14 @@ public abstract class Item {
 	private String name;
 	private String desc;
 	private int smallImgId;
-	private ArrayList<String> clueList;
+	protected ArrayList<String> clueList = new ArrayList<String>();
 	private static int i = 0;
 	
 	public Item(String name, String desc, int smallImgId) {
 		this.name = name;
 		this.desc = desc;
 		this.smallImgId = smallImgId;
+		clueList();
 	}
 
 	public String getName() {
@@ -30,13 +31,7 @@ public abstract class Item {
 	
 	public abstract String clues(int n);
 	
-    public void clueList(){
-    	int numRiddles = 10;
-		for (int i=0; i< numRiddles; i++) {
-			clueList.add(clues(i));
-		}
-		Collections.shuffle(clueList);
-    }
+    public abstract void clueList();
     
     public String getClue(){
     	String c;
@@ -50,6 +45,10 @@ public abstract class Item {
 			c = clueList.get(i);
 		}
     	return c;
+    }
+    
+    public ArrayList<String> getClueList(){
+    	return clueList;
     }
 
 }

@@ -27,4 +27,17 @@ public class Logbook {
 	public String getNote(int index) {
 		return notes.get(index);
 	}
+	
+	public String getNotes(){
+		String all = "";
+		if(notes.size() == 0){
+			all = "The Logbook is currently empty.";
+		}
+		else{
+			for(String i: notes){
+				all += i + "\n";
+			}
+		}
+		return all;
+	}
 }
