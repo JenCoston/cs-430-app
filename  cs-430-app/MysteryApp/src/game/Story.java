@@ -215,4 +215,16 @@ public class Story {
 		}
 		return npcs.get(interestingNPC+1);
 	}
+	
+	public boolean solved(String k, String w, String l){
+		if(k.compareToIgnoreCase(killer.getName()) == 0){
+			if(w.compareToIgnoreCase(murderWeapon.getName()) == 0){
+				if(l.compareToIgnoreCase(murderLocation.getName()) == 0){
+					return true;
+				}
+			}
+			
+		}
+		return false;
+	}
 }
