@@ -31,7 +31,7 @@ public class CreateChar extends Activity {
         else{
         	Player.getPlayer().setUpPlayer(response);
         	Game.getGame();
-        	String text = "Dear " + Player.getPlayer().getName() + ",\n" + Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?";
+        	String text = Player.getPlayer().getName() + "\n" + Story.getStory().getVictim().getFullName() + " was murdered yesterday! Can you help us find the culprit?";
         	Logbook.getLogbook().addNote("\t" + text);
         }
     	Intent i = new Intent(getApplicationContext(), Map.class);
