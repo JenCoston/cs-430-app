@@ -37,6 +37,9 @@ public class RiddlePuzzle extends PuzzleActivity {
       }
       else if(Riddles.getRiddles().correct(response, id)){
     	String clue = Story.getStory().getClue();
+    	if(clue == null){
+    		clue = Story.getStory().getClue();
+    	}
     	Logbook.getLogbook().addNote("\t" + clue);
       	showDialog("Congratulations! Here's a clue to help solve the mystery: " + clue , 10000);
       	Story.getStory().advanceInterestingNonPlayer();

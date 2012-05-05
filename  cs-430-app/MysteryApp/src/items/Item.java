@@ -35,7 +35,7 @@ public abstract class Item {
     
     public String getClue(){
     	String c;
-    	if(i <= 9){
+    	if(i < clueList.size()){
 			c = clueList.get(i);
 			i++;
 		}
