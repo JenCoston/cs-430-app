@@ -41,12 +41,12 @@ public abstract class LocationActivity extends Activity {
 		// Resume a Saved Game
 		if (l.hasItems()) {
 			Item item = l.getOnlyItem();//a test function for demo purposes
-			showDialog("You found the "+item.getName()+" - "+item.getDescription()+".", 3000, item.getSmallImgId());
+			showDialog("You found the "+item.getName()+" - "+item.getDescription()+".", 10000, item.getSmallImgId());
 			Player.getPlayer().addItems(item);
 			l.removeItem(item.getName());
 		}
 		else
-			showDialog("There are no items here.", 3000, backImgId);
+			showDialog("There are no items here.", 5000, backImgId);
 	}
 	
 	public void exploreMulti(View view) {
@@ -67,7 +67,7 @@ public abstract class LocationActivity extends Activity {
         		public void onClick(DialogInterface dialog, int choice) {
         			//Intent characterIntent = newCharacterIntentFactory(npcChoices[choice].toString());
         			NonPlayer curr = npcs[choice];
-        			showDialog(curr.getName() + ": " + curr.getDescription(), 3000, R.drawable.deadend_sm);
+        			showDialog(curr.getName() + ": " + curr.getDescription(), 10000, R.drawable.deadend_sm);
         			Intent characterIntent = npcs[choice].getIntent(getApplicationContext());
         			startActivity(characterIntent);
         			//Toast.makeText(getApplicationContext(), npcChoices[choice], Toast.LENGTH_LONG).show();

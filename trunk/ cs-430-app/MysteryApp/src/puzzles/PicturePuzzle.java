@@ -4,6 +4,7 @@ import persons.Investigator;
 import game.Logbook;
 import game.Story;
 import com.android.mysteryApp.Lose;
+import com.android.mysteryApp.Map;
 import com.android.mysteryApp.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -37,6 +38,8 @@ public class PicturePuzzle extends PuzzleActivity {
 	    	Logbook.getLogbook().addNote("\t" + clue);
 	    	showDialog("Congratulations! Here's a clue to help solve the mystery: " + clue, 10000);
 	    	Story.getStory().advanceInterestingNonPlayer();
+	    	Intent i = new Intent(getApplicationContext(), Map.class);
+	    	startActivity(i);
 	    }
 	    else{
 	    	String invest = Investigator.getInvestigator().displayInvestigator();
