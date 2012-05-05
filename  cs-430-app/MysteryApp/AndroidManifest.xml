@@ -32,6 +32,7 @@
         <activity android:name=".Lose"></activity>
         <activity android:name=".Solve"></activity>
         <activity android:name=".Win"></activity>
+        <activity android:name=".Disclaimer"></activity>
         <activity android:name=".MinesweeperActivity"></activity>
         <activity android:name="persons.activities.Ambassador"></activity>
         <activity android:name="locations.activities.AmbrosiaPlace"></activity>
