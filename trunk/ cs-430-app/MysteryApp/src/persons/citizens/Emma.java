@@ -12,7 +12,9 @@ public class Emma extends Citizen {
 				"Emma makes apple butter for the tourists using tried and true methods taught to her by her great-grandmother. The secret is the cedar wood used for the fire.",
 				Pacifica.getPacifica(),
 				EmmaActivity.class,
-				""
+				"Howdy y'all",
+				"Have you tried some of my apple butter??",
+				"If you have time, would you mind collecting some cedar wood?"
 		);
 	}
 

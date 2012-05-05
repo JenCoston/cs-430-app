@@ -12,7 +12,9 @@ public class Joshua extends Citizen {
 				"Joshua's passion is art. He travels the world admiring statues and paintings.",
 				Ambrosia.getAmbrosia(),
 				JoshuaActivity.class,
-				""
+				"Good Day!",
+				"I've traveled the world looking for unique art.",
+				"I heard the victim had some beautiful pieces of art in their collection..."
 		);
 	}
 

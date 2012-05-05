@@ -12,7 +12,9 @@ public class Andre extends Citizen {
 				"Lord Andre is known as the court playboy. He has dated most of the ladies at court. His sights are currently set on newcomer Lady Bernette.",
 				Ambrosia.getAmbrosia(),
 				AndreActivity.class,
-				""
+				"Bonjour!",
+				"All the ladies in this town are mine...",
+				"Have you seen my new Lady Bernette?"
 		);
 	}
 

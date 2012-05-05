@@ -12,7 +12,9 @@ public class Akila extends Citizen {
 				"Akila beauty is renown. As the daughter of the pyramid architect, not a day goes by where she goes without. Anything she desires is hers.",
 				Wallaby.getWallaby(),
 				AkilaActivity.class,
-				""
+				"Ezayko",
+				"Stop wasting my time!",
+				"Did you bring me a present??"
 		);
 	}
 

@@ -12,7 +12,9 @@ public class Gabrielle extends Citizen {
 				"Lady Gabrielle is the court gossip. She knows everyone and their business. If you want to know something, she is the person to ask.",
 				Ambrosia.getAmbrosia(),
 				GabrielleActivity.class,
-				""
+				"Halo! 'S fhada bho nach fhaca mi thu",
+				"If only I hadn't left my diary at home...",
+				"Can you believe the dress that lady was wearing?"
 		);
 	}
 

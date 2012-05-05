@@ -12,7 +12,9 @@ public class Mathew extends Citizen {
 				"Mathew has always wanted to learn how to ski. He traveled far and wide looking for someplace to learn. After arriving here, he took to the slopes. So, far everything is going well.",
 				Dislexia.getDislexia(),
 				MathewActivity.class,
-				""
+				"Privet!",
+				"If you have time, lets go down the slopes!",
+				"Are you sure you are dressed warm enough for this weather?"
 		);
 	}
 
