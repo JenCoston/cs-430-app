@@ -12,7 +12,9 @@ public class Samantha extends Citizen {
 				"Samantha wants to be athletic and looking into the many different sports. Currently she is trying Frisbee.",
 				Wallaby.getWallaby(),
 				SamanthaActivity.class,
-				""
+				"Ezayko!",
+				"Would you like to play some Frisbee golf?",
+				"Go long..."
 		);
 	}
 

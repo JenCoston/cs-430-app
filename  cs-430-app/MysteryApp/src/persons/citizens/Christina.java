@@ -12,7 +12,9 @@ public class Christina extends Citizen {
 				"Christina has traveled the world learning to dance. While faced with coordination issues, her enthusiasm is contagious.",
 				Orient.getOrient(),
 				ChristinaActivity.class,
-				""
+				"Kon'nichiwa",
+				"I could show you one of my world famous tap dances...",
+				"Watch where you walk, something always seems to be tripping me up."
 		);
 	}
 

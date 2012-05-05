@@ -12,7 +12,9 @@ public class James extends Citizen {
 				"James loves to hike. He journeyed here especially for the scenery. While hiking he loves to take pictures of the vistas and locals.",
 				Pacifica.getPacifica(),
 				JamesActivity.class,
-				""
+				"Howdy y'all",
+				"Hiked any good moutains lately?",
+				"Can I show you the latest pictures I have taken?"
 		);
 	}
 

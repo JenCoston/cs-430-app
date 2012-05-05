@@ -12,7 +12,9 @@ public class David extends Citizen {
 				"David loves to eat. He has traveled the globe tasting the foods of the many countries.",
 				Ambrosia.getAmbrosia(),
 				DavidActivity.class,
-				""
+				"Good Day!",
+				"I'm hungry!",
+				"You wouldn't happen to have some spare food on you, would you?"
 		);
 	}
 

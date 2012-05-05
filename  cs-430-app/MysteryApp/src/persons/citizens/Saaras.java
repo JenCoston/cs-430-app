@@ -12,7 +12,9 @@ public class Saaras extends Citizen {
 				"Saaras started dancing at the age of 3. She has been classically trained in Natya the sacred Hindu musical theater styles. She usually only performs for the elite.",
 				Ambrosia.getAmbrosia(),
 				SaarasActivity.class,
-				""
+				"Salam Alaikum!",
+				"I would show you a dance, but you need to be royalty.",
+				"I'm really a rariety in the art of dance!"
 		);
 	}
 

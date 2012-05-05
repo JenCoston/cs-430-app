@@ -12,7 +12,9 @@ public class Andrew extends Citizen {
 				"Andrew has lost his horse. After searching for hours he has taken a break to drink some coffee.",
 				Pacifica.getPacifica(),
 				AndrewActivity.class,
-				""
+				"Howdy y'all",
+				"Have you seen my horse?",
+				"Lets discuss this over a cup of coffee"
 		);
 	}
 
