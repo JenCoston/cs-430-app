@@ -33,7 +33,7 @@ public abstract class NonPlayerActivity extends Activity {
     
     
     public void charTalk(View view){
-    	showDialog(np.converse(), 3000);
+    	showDialog(np.converse(), 10000);
     	if (np.isInteresting()) {
     		NonPlayerState ns = np.perform();
     		//np.perform(getApplicationContext());//may need to get a return value, etc
@@ -54,18 +54,18 @@ public abstract class NonPlayerActivity extends Activity {
         if (np.wantsItem()) {
         	wantedItem = np.getWantedItem();
         	if (p.hasItem(wantedItem)) {
-        		showDialog("Exactly what I need! Thank you.", 3000);
+        		showDialog("Exactly what I need! Thank you.", 10000);
         		Logbook.getLogbook().addNote("\t You gave " + np.getName() + " a " + wantedItem + " which they wanted.");
         		p.removeItem(wantedItem);
         		np.satisfy();
         	}
         	else {
-        		showDialog("You don't appear to have what I need.", 3000);
+        		showDialog("You don't appear to have what I need.", 10000);
         		Logbook.getLogbook().addNote("\t" + np.getName() + " is looking for " + wantedItem + " and you didn't have it.");
         	}
         }
         else {
-        	showDialog("I don't need any items right now.", 3000);
+        	showDialog("I don't need any items right now.", 10000);
         }
     }
     
