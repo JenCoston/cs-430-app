@@ -1,5 +1,6 @@
 package com.android.mysteryApp;
 
+import persons.Player;
 import game.DataLoader;
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +29,13 @@ public class Load extends Activity {
     
     public void empty(View view){
     	// Empty
-    	Intent i = new Intent(getApplicationContext(), NewGame.class);
+    	Intent i = new Intent(getApplicationContext(), Map.class);
+        startActivity(i);
+    }
+    
+    public void returnMM(View view){
+        // Return to Main Menu
+        Intent i = new Intent(getApplicationContext(), MysteryAppActivity.class);
         startActivity(i);
     }
     
@@ -50,19 +57,19 @@ public class Load extends Activity {
         boolean val = dl.save1HasSaveFile(getApplicationContext());
         if (val) {
         	Button x = (Button) findViewById(R.id.save1button);
-        	x.setText(saveFile1+" has data - testing");
+        	x.setText(saveFile1+" - " + Player.getPlayer().getName());
         }
         
         val = dl.save2HasSaveFile(getApplicationContext());
         if (val) {
         	Button x2 = (Button) findViewById(R.id.save2button);
-        	x2.setText(saveFile2+" has data - testing");
+        	x2.setText(saveFile2+" - " + Player.getPlayer().getName());
         }
         
         val = dl.save3HasSaveFile(getApplicationContext());
         if (val) {
         	Button x3 = (Button) findViewById(R.id.save3button);
-        	x3.setText(saveFile3+" has data - testing");
+        	x3.setText(saveFile3+" - " + Player.getPlayer().getName());
         }
     }
 }
